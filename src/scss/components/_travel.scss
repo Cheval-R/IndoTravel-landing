@@ -1,6 +1,24 @@
 .travel {
-	&__wrapper {}
+	padding-bottom: 150px;
 
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__intro {
+		@media (width <=1200px) {
+			margin-bottom: 62px;
+		}
+
+		@media (width <=900px) {
+			margin-bottom: 40px;
+		}
+
+		@media (width <=600px) {
+			margin-bottom: 24px;
+		}
+	}
 
 	&__map {}
 }
@@ -10,19 +28,21 @@
 	justify-content: space-between;
 	align-items: center;
 
-	&:after {
-		content: "";
-		display: block;
-		width: 480px;
-		height: 410px;
+	// &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	width: 480px;
+	// 	height: 410px;
 
-		background: {
-			size: cover;
-			repeat: no-repeat;
-			position: center;
-			image: url("./../../img/travel/map.png")
-		}
-	}
+	// 	background: {
+	// 		size: cover;
+	// 		repeat: no-repeat;
+	// 		position: center;
+	// 		image: url("./../../img/travel/map.png");
+	// 	}
+
+	// 	transform: translateY(-24px);
+	// }
 
 	&__wrapper {
 		max-width: 580px;
@@ -34,53 +54,20 @@
 			left: 14px;
 			top: 6px;
 			bottom: 0;
-			height: calc(100% - 13px);
+			height: calc(100% - 50px);
 			width: 2px;
 			background-color: $_3;
-		}
-	}
 
-
-
-	&__title {
-		display: flex;
-		align-items: center;
-		font-size: 20px;
-		line-height: 1.5;
-		font-weight: 700;
-		letter-spacing: -0.028rem;
-		cursor: pointer;
-
-		&:not(:last-of-type) {
-			margin-bottom: 38px;
-		}
-
-		&::before {
-			z-index: 2;
-			content: "";
-			display: block;
-			width: 18px;
-			height: 18px;
-			border-radius: 50%;
-			background-color: $_3;
-			margin-left: 6px;
-			margin-right: 76px;
-		}
-
-		&--active {
-			margin-bottom: 18px !important;
-
-			&::before {
-				z-index: 2;
-				display: block;
-				content: "";
-				width: 30px;
-				height: 30px;
-				margin-left: 0px;
-				margin-right: 70px;
+			@media (width <=600px) {
+				left: 7px;
+				height: calc(100% - 48px);
 			}
 		}
 	}
+
+
+
+
 
 	// &__button {
 	// 	width: 18px;
@@ -110,6 +97,161 @@
 		margin-bottom: 64px;
 		padding-left: 95px;
 		letter-spacing: -0.029rem;
+
+		@media (width <=1200px) {
+			box-sizing: content-box;
+			width: 440px;
+			margin-bottom: 37px;
+		}
+
+		@media (width <=900px) {
+			font-size: 14px;
+			width: auto;
+			margin-bottom: 40px;
+		}
+
+		@media (width <=600px) {
+			font-size: 12px;
+			padding-left: 25px;
+			margin-bottom: 25px;
+		}
 	}
 }
 
+.accordion__item:last-child .accordion__title {
+	@media (width <=900px) {
+		margin-bottom: 27px;
+	}
+
+	@media (width <=600px) {}
+}
+
+.accordion__title {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 700;
+	letter-spacing: -0.028rem;
+	margin-bottom: 38px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+
+
+
+	span:last-child {
+		min-width: 409px;
+
+		@media (width <=600px) {
+			min-width: unset;
+		}
+	}
+
+	@media (hover:hover) {
+		&:hover {
+			color: $_3;
+		}
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+
+	&:focus-visible span {
+		outline: 2px solid $_3;
+	}
+
+	&:active {
+		color: #D09600;
+	}
+
+	@media(width <=900px) {
+		font-size: 16px;
+		margin-bottom: 44px;
+	}
+
+	@media(width <=600px) {
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+}
+
+.acc-icon {
+	transition: scale 0.3s ease-in;
+	z-index: 2;
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: $_3;
+	margin-left: 6px;
+	margin-right: 76px;
+
+	@media (width <=600px) {
+		margin-left: 3px;
+		margin-right: 14px;
+		width: 11px;
+		height: 11px;
+		min-height: 11px;
+		min-width: 11px;
+		max-height: 11px;
+		max-width: 11px;
+	}
+}
+
+.ui-accordion-header-active {
+
+	margin-bottom: 18px;
+
+	@media(width <=900px) {
+		margin-bottom: 25px;
+	}
+
+	@media(width <=600px) {
+		align-items: flex-start;
+		margin-bottom: 15px;
+	}
+}
+
+.acc-icon-active {
+	width: 30px;
+	height: 30px;
+	margin-left: 0;
+	margin-right: 10px;
+
+	@media (width <=600px) {
+		width: 16px;
+		height: 16px;
+		min-width: 16px;
+		min-height: 16px;
+		max-width: 16px;
+		max-height: 16px;
+		margin-right: 13px;
+	}
+}
+
+
+
+.map {
+	width: 480px;
+	height: 410px;
+
+	@media (width <=1200px) {
+		width: clamp(319px, 31vw, 480px);
+		height: clamp(268px, 26vw, 410px);
+		transform: translateY(-25px);
+	}
+
+	@media (width <=900px) {
+		align-self: center;
+		width: 380px;
+		transform: translateY(0);
+		height: 320px;
+	}
+
+	@media (width <=600px) {
+		width: 270px;
+		height: 235px;
+	}
+}
