@@ -1,0 +1,18 @@
+$opacity: #ffffff00;
+
+$_1: #303030;
+$_2: #FFFFFF;
+$_3: #FCB500;
+$_4: #AFAFAF;
+
+@mixin font($name, $weight) {
+	font: {
+		family: $name;
+		weight: $weight;
+		display: swap;
+	}
+	src:  url("../fonts/#{ $name }-#{ $weight }.woff2") format("woff2"),
+	url("./../../fonts/#{ $name }-#{ $weight }.woff") format("woff"),
+	url("./../fonts/#{ $name }-#{ $weight }.ttf") format("truetype"),
+	url("./../fonts/#{ $name }-#{ $weight }.eot") format("embedded-opentype");
+}

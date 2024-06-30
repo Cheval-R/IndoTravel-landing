@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gulp Template</title>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const createLink = url => {
+				const link = document.createElement('link')
+				link.rel = 'stylesheet';
+				link.href = url;
+				document.head.append(link);
+			};
+			createLink('css/index.min.css');
+		})
+	</script>
+	<script defer src="./js/index.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__menu">
+					<img class="header__logo" src="./img/logo.svg" alt="Логотип компании IndoTravel" width="173" height="32">
+					<button class="burger" id="burger">
+						<svg width="35" height="16" viewBox="0 0 35 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<rect width="35" height="2" rx="1" />
+							<rect y="7" width="35" height="2" rx="1" />
+							<rect y="14" width="35" height="2" rx="1" />
+						</svg>
+					</button>
+					<nav class="nav" id="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#!">Индонезия</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#!">Путешествие</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#!">Тур 14 дней</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#!">Почему мы?</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#!">Фотоальбом</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#!">Бронирование</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#!">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+
+			<div class="header__content">
+				<p class="header__invite">Открой для себя</p>
+				<p class="header__indonesia">indonesia</p>
+				<p class="header__description">Тур 14 дней, покажем все самое интересное. <br> Вы точно запомните этот отдых навсегда.</p>
+				<a class="btn btn--reserv" href="#reserv">Забронировать</a>
+			</div>
+		</div>
+	</header>
+	<main class="page">
+		<section class="about">
+			<div class="container">
+				<div class="about__wrapper">
+					<div class="about__content">
+						<div class="about__top">
+							<h2 class="section__title about__title">Индонезия</h2>
+							<p class="about__intro">Незабываемая, чистая красота островов восхищает своей нетронутой природой и&nbsp;культурными традициями.</p>
+							<p class="about__text about__text--first">Величественная Индонезия&nbsp;&mdash; квинтэссенция экзотики: первозданная природа Бали и пляжи с&nbsp;черным песком острова Суматра, дворцы и&nbsp;батик Явы и&nbsp;дождевые леса Калимантана.</p>
+						</div>
+						<div class="slider">
+							<div class="slider__item">
+								<img src="./img/about/slider/slide-1.jpg" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="./img/about/slider/slide-2.jpg" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="./img/about/slider/slide-3.jpg" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="./img/about/slider/slide-4.jpg" alt="">
+							</div>
+							<div class="slider__item">
+								<img src="./img/about/slider/slide-5.jpg" alt="">
+							</div>
+						</div>
+						<div class="about__bot">
+							<div class="about__left-col">
+								<img src="./img/about/img-1.jpg" alt="" width="480" height="312">
+								<p class="about__text about__text--second"> Индонезия расположилась на легендарных и&nbsp;известных своей довольно непохожей историей островах Юго-Восточной Азии – на&nbsp;Суматре, Яве, Сулавеси, Бали, отчасти на&nbsp;Борнео и на Новой Гвинее, а также на&nbsp;множестве более мелких островов Малайского архипелага.</p>
+							</div>
+							<img src="./img/about/img-2.jpg" alt="" width="280" height="377">
+						</div>
+					</div>
+					<div class="about__gallery">
+						<img src="./img/about/img-3.jpg" alt="" width="380" height="700">
+						<img src="./img/about/img-4.jpg" alt="" width="380" height="507">
+						<img src="./img/about/img-5.jpg" alt="" width="280" height="264">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer"></footer>
+</body>
+
+</html>

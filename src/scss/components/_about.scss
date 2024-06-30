@@ -1,0 +1,293 @@
+.about {
+	padding-bottom: 40px;
+
+	@media (width <= 900px) {
+		padding-bottom: 30px;
+	}
+	@media (width <= 670px) {
+		padding-bottom: 25px;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 20px;
+
+		@media (width <= 1200px) {
+			gap: 23px;
+		}
+
+		@media (width <= 900px) {
+			gap: 27px;
+		}
+	}
+
+	&__content {
+		padding-top: 187px;
+		flex-basis: 780px;
+
+		@media (width <= 1200px) {
+			padding-top: 120px;
+		}
+
+		@media (width <= 900px) {
+			padding-top: 80px;
+		}
+
+		@media (width <= 670px) {
+			min-width: 0;
+			padding-top: 50px;
+		}
+	}
+
+	&__top {
+		margin-bottom: 120px;
+
+		@media (width <= 1200px) {
+			margin-bottom: 90px;
+		}
+
+		@media (width <= 900px) {
+			margin-bottom: 60px;
+		}
+
+		@media (width <= 670px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__title {}
+
+	&__intro {
+		font-family: 'Merriweather';
+		font-size: 34px;
+		line-height: 1.5;
+		letter-spacing: 0.04rem;
+		max-width: 580px;
+		margin-bottom: 80px;
+
+		@media (width <= 1200px) {
+			font-size: 30px;
+			margin-bottom: 60px;
+		}
+
+		@media (width <= 900px) {
+			font-size: 20px;
+			max-width: 380px;
+			letter-spacing: 0.025rem;
+			margin-bottom: 40px;
+		}
+
+		@media (width <= 670px) {
+			font-size: 16px;
+			margin-bottom: 25px;
+			letter-spacing: 0.02rem;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.5;
+		max-width: 285px;
+		letter-spacing: -0.03rem;
+
+		@media (width <= 900px) {
+			font-size: 14px;
+			max-width: 300px;
+			letter-spacing: -0.022rem;
+		}
+
+		@media (width <= 670px) {
+			font-size: 12px;
+			max-width: unset;
+			width: 100%;
+		}
+
+		&--first {
+			transform: translateX(300px);
+
+			@media (width <= 1200px) {
+				transform: translateX(240px);
+			}
+
+			@media (width <= 900px) {
+				transform: translateX(80px);
+			}
+
+			@media (width <= 670px) {
+				transform: unset;
+			}
+		}
+
+		&--second {
+			transform: translateX(100px);
+			max-width: 290px;
+
+			@media (width <= 1200px) {
+				transform: unset;
+				max-width: 300px;
+			}
+
+			@media (width <= 670px) {
+				max-width: unset;
+				width: 100%;
+			}
+		}
+	}
+
+
+	&__bot {
+		display: flex;
+		gap: 20px;
+
+		@media (width <= 1200px) {
+			gap: 15px;
+		}
+
+		>img {
+			height: 100%;
+			transform: translateY(125px);
+
+			@media (width <= 1200px) {
+				max-height: 297px;
+				transform: translate(5px, 65px);
+			}
+
+			@media (width <= 900px) {
+				max-width: 140px;
+				transform: translate(5px, 90px);
+			}
+		}
+
+		@media (width <= 670px) {
+			img {
+				display: none;
+			}
+		}
+	}
+
+	&__left-col {
+
+		img {
+			margin-bottom: 100px;
+
+			@media (width <= 1200px) {
+				margin-bottom: 60px;
+			}
+		}
+	}
+
+	&__second-text {}
+
+	&__gallery {
+		transform: translateY(-63px);
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+
+		@media (width <= 1200px) {
+			transform: translateY(-56px);
+			gap: 79px;
+		}
+
+		@media (width <= 900px) {
+			transform: translateY(-48px);
+			gap: 60px;
+		}
+
+		@media (width <= 670px) {
+			display: none;
+		}
+
+		& img:last-child {
+			align-self: flex-end;
+
+			@media(width <= 1200px) {
+				max-height: 208px;
+				width: auto;
+			}
+		}
+	}
+
+
+}
+
+.slider {
+	display: none;
+	position: relative;
+	height: 208px;
+
+	@media(width <= 670px) {
+		display: block;
+		margin-left: -25px;
+		margin-right: -25px;
+		margin-bottom: 25px;
+	}
+}
+
+.slick-track {
+	display: flex;
+	// gap: 42px;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slider {
+	min-width: 0;
+}
+
+.slider__item img {
+	margin: 0 auto;
+}
+
+.slick-dots {
+	position: absolute;
+	display: flex;
+	gap: 3px;
+	bottom: 10px;
+	z-index: 9999;
+	left: calc(50% - 20px);
+
+	li {
+		background-color: $_2;
+		width: 4px;
+		border-radius: 50%;
+		height: 4px;
+
+		&.slick-active {
+			width: 12px;
+			border-radius: 10px;
+			background-color: $_3;
+		}
+	}
+
+	button {
+		font-size: 0;
+	}
+}
+
+
+
+.section__title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 60px;
+
+	@media (width <= 1200px) {
+		margin-bottom: 40px;
+	}
+
+	@media (width <= 900px) {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+
+	@media (width <= 670px) {
+		font-size: 12px;
+		letter-spacing: -0.02rem;
+		margin-bottom: 15px;
+	}
+}
