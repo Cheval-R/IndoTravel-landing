@@ -56,6 +56,7 @@ const path = {
 		//! Все js файлы через массив
 		js: [
 			'src/libs/jquery-3.7.1.min.js',
+			'src/libs/jquery-ui.min.js',
 			'src/libs/slick.min.js',
 			'src/js/index.js',
 		],

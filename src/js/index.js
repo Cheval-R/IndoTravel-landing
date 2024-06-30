@@ -1,5 +1,7 @@
 // !BURGER
 
+import { active } from "browser-sync";
+
 
 const burgerBtn = $('#burger');
 const nav = $('#nav');
@@ -49,3 +51,11 @@ function sliderInit() {
 	});
 }
 
+
+// ! ACCORDION
+
+
+// $('.accordion__wrapper').accordion({
+// 	active: true,
+// 	collapsible: true,
+// });

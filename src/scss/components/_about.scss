@@ -1,10 +1,11 @@
 .about {
-	padding-bottom: 40px;
+	padding-bottom: 18px;
 
-	@media (width <= 900px) {
+	@media (width <=900px) {
 		padding-bottom: 30px;
 	}
-	@media (width <= 670px) {
+
+	@media (width <=670px) {
 		padding-bottom: 25px;
 	}
 
@@ -12,11 +13,11 @@
 		display: flex;
 		gap: 20px;
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			gap: 23px;
 		}
 
-		@media (width <= 900px) {
+		@media (width <=900px) {
 			gap: 27px;
 		}
 	}
@@ -25,15 +26,15 @@
 		padding-top: 187px;
 		flex-basis: 780px;
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			padding-top: 120px;
 		}
 
-		@media (width <= 900px) {
+		@media (width <=900px) {
 			padding-top: 80px;
 		}
 
-		@media (width <= 670px) {
+		@media (width <=670px) {
 			min-width: 0;
 			padding-top: 50px;
 		}
@@ -42,47 +43,22 @@
 	&__top {
 		margin-bottom: 120px;
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			margin-bottom: 90px;
 		}
 
-		@media (width <= 900px) {
+		@media (width <=900px) {
 			margin-bottom: 60px;
 		}
 
-		@media (width <= 670px) {
+		@media (width <=670px) {
 			margin-bottom: 25px;
 		}
 	}
 
 	&__title {}
 
-	&__intro {
-		font-family: 'Merriweather';
-		font-size: 34px;
-		line-height: 1.5;
-		letter-spacing: 0.04rem;
-		max-width: 580px;
-		margin-bottom: 80px;
 
-		@media (width <= 1200px) {
-			font-size: 30px;
-			margin-bottom: 60px;
-		}
-
-		@media (width <= 900px) {
-			font-size: 20px;
-			max-width: 380px;
-			letter-spacing: 0.025rem;
-			margin-bottom: 40px;
-		}
-
-		@media (width <= 670px) {
-			font-size: 16px;
-			margin-bottom: 25px;
-			letter-spacing: 0.02rem;
-		}
-	}
 
 	&__text {
 		font-size: 18px;
@@ -91,13 +67,13 @@
 		max-width: 285px;
 		letter-spacing: -0.03rem;
 
-		@media (width <= 900px) {
+		@media (width <=900px) {
 			font-size: 14px;
 			max-width: 300px;
 			letter-spacing: -0.022rem;
 		}
 
-		@media (width <= 670px) {
+		@media (width <=670px) {
 			font-size: 12px;
 			max-width: unset;
 			width: 100%;
@@ -106,15 +82,15 @@
 		&--first {
 			transform: translateX(300px);
 
-			@media (width <= 1200px) {
+			@media (width <=1200px) {
 				transform: translateX(240px);
 			}
 
-			@media (width <= 900px) {
+			@media (width <=900px) {
 				transform: translateX(80px);
 			}
 
-			@media (width <= 670px) {
+			@media (width <=670px) {
 				transform: unset;
 			}
 		}
@@ -123,12 +99,12 @@
 			transform: translateX(100px);
 			max-width: 290px;
 
-			@media (width <= 1200px) {
+			@media (width <=1200px) {
 				transform: unset;
 				max-width: 300px;
 			}
 
-			@media (width <= 670px) {
+			@media (width <=670px) {
 				max-width: unset;
 				width: 100%;
 			}
@@ -140,7 +116,7 @@
 		display: flex;
 		gap: 20px;
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			gap: 15px;
 		}
 
@@ -148,18 +124,18 @@
 			height: 100%;
 			transform: translateY(125px);
 
-			@media (width <= 1200px) {
+			@media (width <=1200px) {
 				max-height: 297px;
 				transform: translate(5px, 65px);
 			}
 
-			@media (width <= 900px) {
+			@media (width <=900px) {
 				max-width: 140px;
 				transform: translate(5px, 90px);
 			}
 		}
 
-		@media (width <= 670px) {
+		@media (width <=670px) {
 			img {
 				display: none;
 			}
@@ -171,7 +147,7 @@
 		img {
 			margin-bottom: 100px;
 
-			@media (width <= 1200px) {
+			@media (width <=1200px) {
 				margin-bottom: 60px;
 			}
 		}
@@ -181,28 +157,29 @@
 
 	&__gallery {
 		transform: translateY(-63px);
+
 		display: flex;
 		flex-direction: column;
 		gap: 100px;
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			transform: translateY(-56px);
 			gap: 79px;
 		}
 
-		@media (width <= 900px) {
+		@media (width <=900px) {
 			transform: translateY(-48px);
 			gap: 60px;
 		}
 
-		@media (width <= 670px) {
+		@media (width <=670px) {
 			display: none;
 		}
 
 		& img:last-child {
 			align-self: flex-end;
 
-			@media(width <= 1200px) {
+			@media(width <=1200px) {
 				max-height: 208px;
 				width: auto;
 			}
@@ -217,7 +194,7 @@
 	position: relative;
 	height: 208px;
 
-	@media(width <= 670px) {
+	@media(width <=670px) {
 		display: block;
 		margin-left: -25px;
 		margin-right: -25px;
@@ -276,18 +253,45 @@
 	line-height: 1.5;
 	margin-bottom: 60px;
 
-	@media (width <= 1200px) {
+	@media (width <=1200px) {
 		margin-bottom: 40px;
 	}
 
-	@media (width <= 900px) {
+	@media (width <=900px) {
 		font-size: 14px;
 		margin-bottom: 30px;
 	}
 
-	@media (width <= 670px) {
+	@media (width <=670px) {
 		font-size: 12px;
 		letter-spacing: -0.02rem;
 		margin-bottom: 15px;
+	}
+}
+
+.section__intro {
+	font-family: 'Merriweather';
+	font-size: 34px;
+	line-height: 1.5;
+	letter-spacing: 0.04rem;
+	max-width: 580px;
+	margin-bottom: 80px;
+
+	@media (width <=1200px) {
+		font-size: 30px;
+		margin-bottom: 60px;
+	}
+
+	@media (width <=900px) {
+		font-size: 20px;
+		max-width: 380px;
+		letter-spacing: 0.025rem;
+		margin-bottom: 40px;
+	}
+
+	@media (width <=670px) {
+		font-size: 16px;
+		margin-bottom: 25px;
+		letter-spacing: 0.02rem;
 	}
 }
