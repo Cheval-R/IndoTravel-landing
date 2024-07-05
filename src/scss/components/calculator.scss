@@ -1,0 +1,252 @@
+.calculator {
+	background: {
+		image: url("./../../img/calculator-bg.jpg");
+		repeat: no-repeat;
+		position: center;
+		size: cover;
+	}
+
+	padding-top: 60px;
+	color: $_2;
+
+
+	&__invite {
+		font-size: 18px;
+		line-height: 1.5;
+		font-weight: 300;
+		max-width: 480px;
+		margin-bottom: 80px;
+	}
+}
+
+.price {
+	border-radius: 30px 30px 0px 0px;
+	padding: 68px 60px;
+
+	backdrop-filter: blur(10px);
+	background: rgba(230, 205, 173, 0.3);
+}
+
+.price__container {
+	border-radius: 20px;
+	padding: 23px 38px 20px;
+
+	background: rgba(33, 25, 25, 0.78);
+
+	display: flex;
+	gap: 39px;
+}
+
+.price__input-wrapper {
+	position: relative;
+}
+
+.price__input {
+	position: relative;
+	width: 217px;
+	padding: 12px 26px 0 2px;
+	cursor: pointer;
+
+	&:hover .price__arrow {
+		background-color: #fff;
+		color: $_3;
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+
+	&:focus-visible .price__arrow {
+		color: $_3;
+	}
+
+	&:active * {
+		color: $_3;
+	}
+}
+
+.price__input--date {}
+
+.price__title {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 130%;
+	margin-bottom: 12px;
+}
+
+.price__placeholder {
+	max-width: 143px;
+	opacity: 0.7;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 130%;
+}
+
+.price__arrow {
+	position: absolute;
+	right: 25px;
+	border-radius: 50%;
+	padding: 6px 6px;
+	// width: 24px;
+	// height: 24px;
+	top: 35px;
+}
+
+.price__placeholder--date {}
+
+.price__input--people {}
+
+.price__placeholder--people {}
+
+.price__input--options {}
+
+.price__button {
+	padding: 22px 48px 22px 56px;
+	font-size: 18px;
+	height: 67px;
+}
+
+// !ПОПАП ДАТЫ
+
+.popup {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	color: $_1;
+	background: rgb(255, 255, 255);
+	width: max-content;
+
+
+	position: absolute;
+	top: 123px;
+}
+
+.popup--date {
+	right: 0;
+}
+
+.popup__title {
+	text-align: center;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 130%;
+}
+
+.popup__wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.popup__month-list {
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+	padding: 9px 20px 16px 0;
+	border-right: 1px solid rgb(192, 192, 192);
+}
+
+.popup__month-item {
+	text-align: center;
+	color: rgb(192, 192, 192);
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+
+	&:hover {
+		color: $_3;
+	}
+
+	&:focus-visible {
+		color: $_3;
+		outline: 2px solid $_3;
+	}
+
+}
+
+.popup__month-item--active {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: rgb(252, 181, 0);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 130%;
+}
+
+.popup__days-list {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding-left: 20px;
+}
+
+.popup__day-item {
+	color: rgb(48, 48, 48);
+	font-size: 14px;
+	font-weight: 700;
+
+	&:hover {
+		color: $_3;
+	}
+
+	&:focus-visible {
+		color: $_3;
+		outline: 2px solid $_3;
+	}
+}
+
+.popup__button {
+	border-radius: 8px;
+	padding: 10px 30px;
+	margin-left: auto;
+}
+
+// ! ПОПАП КОЛИЧЕСТВО ЛЮДЕЙ
+.popup--people {
+	right: 102px;
+}
+
+.popup__people-list {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.popup__people-item {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 130%;
+}
+
+// ! ПОПАП ОПЦИЙ
+
+.popup--options {
+	right: 18px;
+}
+
+.popup__title {}
+
+.popup__options-list {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.popup__options-item {
+	font-size: 14px;
+	font-weight: 700;
+	display: flex;
+	gap: 20px;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 16px;
+		height: 16px;
+
+		border: 1px solid rgb(48, 48, 48);
+		background: rgb(255, 255, 255);
+	}
+}

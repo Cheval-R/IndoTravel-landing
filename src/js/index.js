@@ -139,3 +139,50 @@ accHeader.on('click', function (event) {
 		}
 	}
 });
+
+
+
+// !CALCULATOR
+
+// * Date
+
+const dateWrapper = $('.price__input--date');
+const datePopup = $('.popup--date');
+datePopup.slideToggle();
+
+
+dateWrapper.on('click', function (event) {
+	datePopup.slideToggle();
+});
+
+
+
+
+
+
+
+
+
+
+
+// * People
+
+const peopleWrapper = $('.price__input--people');
+const peoplePopup = $('.popup--people');
+peoplePopup.slideToggle();
+
+
+peopleWrapper.on('click', function (event) {
+	peoplePopup.slideToggle();
+});
+
+// * Options
+
+const optionsWrapper = $('.price__input--options');
+const optionsPopup = $('.popup--options');
+optionsPopup.slideToggle();
+
+
+optionsWrapper.on('click', function (event) {
+	optionsPopup.slideToggle();
+});

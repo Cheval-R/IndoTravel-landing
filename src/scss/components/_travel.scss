@@ -43,6 +43,9 @@
 
 	// 	transform: translateY(-24px);
 	// }
+	@media (width <= 600px) {
+		flex-direction: column;
+	}
 
 	&__wrapper {
 		max-width: 580px;
@@ -218,7 +221,6 @@
 	width: 30px;
 	height: 30px;
 	margin-left: 0;
-	margin-right: 10px;
 
 	@media (width <=600px) {
 		width: 16px;
