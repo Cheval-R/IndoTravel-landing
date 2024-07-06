@@ -75,7 +75,7 @@ const sumathra = $('.sumathra')
 
 
 accHeader.on('click', function (event) {
-	console.log(event.currentTarget);
+	// console.log(event.currentTarget);
 
 	if ($(this).hasClass('accordion__title--yava')) {
 		if ($(this).attr('aria-expanded') === "true") {
@@ -206,27 +206,39 @@ monthItem.on('click', function (event) {
 			daysList.fadeIn(300);
 
 			$('.popup__days-list').on('click', '.popup__days-item', function (event) {
-				console.log($(this).text()); // Вывод текста кликнутого элемента для примера
+				// console.log($(this).text()); // Вывод текста кликнутого элемента для примера
 				$('.popup__days-item').each(function () {
 					$(this).removeClass('popup__days-item--active');
 				});
 				$(this).addClass('popup__days-item--active'); // Добавление класса активности к кликнутому элементу
 				selectedDays = $(this).text();
-				console.log(selectedDays);
+				// console.log(selectedDays);
 			});
 		}
 	}
 });
 
+$(document).click(function (event) {
+	if (!datePopup.is(event.target) && datePopup.has(event.target).length === 0 && !dateWrapper.is(event.target) && dateWrapper.has(event.target).length === 0) {
+		datePopup.slideUp(300);
+	}
+})
+
 const datePlaceholder = $('.price__placeholder--date');
-console.log(datePlaceholder.text());
+// console.log(datePlaceholder.text());
 const dateBtn = $('.popup__button--date');
 dateBtn.on('click', function (event) {
 	if (selectedDays !== undefined && selectedDays !== null) {
 		datePlaceholder.text(selectedDays);
 		priceBtn.text('Узнать цену');
+		$('.price__input--date').css({
+			'outline': "none"
+		})
+		datePopup.slideToggle(300);
 	}
 });
+
+
 
 function takeCurrentMonth(i) {
 	let currentMonth = i + 1;
@@ -267,13 +279,28 @@ peoplePopup.slideToggle();
 let selectedNumber;
 $('.popup__people-list').on('click', '.popup__people-item', function (event) {
 	selectedNumber = $(this).text();
-	peoplePlaceholder.text(selectedNumber);
+	let people = 'человек';
+	if (selectedNumber === '2' || selectedNumber === '3' || selectedNumber === '4') {
+		people = 'человека'
+	}
+	peoplePlaceholder.text(selectedNumber + " " + people);
 	priceBtn.text('Узнать цену');
+	$('.price__input--people').css({
+		'outline': "none"
+	})
+	peoplePopup.slideToggle(300);
 });
 
 peopleWrapper.on('click', function (event) {
 	peoplePopup.slideToggle();
 });
+
+
+$(document).click(function (event) {
+	if (!peoplePopup.is(event.target) && peoplePopup.has(event.target).length === 0 && !peopleWrapper.is(event.target) && peopleWrapper.has(event.target).length === 0) {
+		peoplePopup.slideUp(300);
+	}
+})
 
 // * Options
 
@@ -282,6 +309,68 @@ const optionsPopup = $('.popup--options');
 optionsPopup.slideToggle();
 
 
+
 optionsWrapper.on('click', function (event) {
 	optionsPopup.slideToggle();
+});
+
+const optionsList = $('.popup__options-list');
+const optionsItem = $('.popup__options-item');
+const optionsBtn = $('.popup__button--options');
+
+const optionsPlaceholder = $('.price__placeholder--options');
+optionsList.on('click', '.popup__options-item', function (event) {
+	// console.log($(this).text());
+	$(this).toggleClass('popup__options-item--checked');
+});
+
+optionsBtn.on('click', function () {
+	let selectedOptions;
+	const optionsItem = $('.popup__options-item');
+	optionsList.children('.popup__options-item--checked').each(function () {
+		if (selectedOptions) {
+			selectedOptions = selectedOptions + ', ' + $(this).text().toLowerCase()
+			console.log(selectedOptions);
+		}
+		else selectedOptions = $(this).text();
+	});
+
+	if (selectedOptions !== undefined && selectedOptions !== null) {
+		// console.log(selectedOptions);
+		optionsPlaceholder.text(selectedOptions);
+		priceBtn.text('Узнать цену');
+		$('.price__input--options').css({
+			'outline': "none"
+		})
+		optionsPopup.slideToggle(300);
+	}
+	else {
+		optionsPlaceholder.text('Выбери нужные опции');
+		optionsPopup.slideToggle(300);
+	}
+})
+
+
+$(document).click(function (event) {
+	if (!optionsPopup.is(event.target) && optionsPopup.has(event.target).length === 0 && !optionsWrapper.is(event.target) && optionsWrapper.has(event.target).length === 0) {
+		optionsPopup.slideUp(300);
+	}
+})
+
+// !РАСЧЕТ СТОИМОСТИ
+
+priceBtn.on('click', function () {
+	if (datePlaceholder.text() === 'Выбери дату путешествия') {
+		$('.price__input--date').css({
+			'outline': "1px solid rgba(255, 0, 0, 0.5)"
+		})
+	}
+	if (peoplePlaceholder.text() === 'Укажи количество человек') {
+		$('.price__input--people').css({
+			'outline': "1px solid rgba(255, 0, 0, 0.5)"
+		})
+	}
+	
+	if (datePlaceholder.text() !== 'Выбери дату путешествия' && peoplePlaceholder.text() !== 'Укажи количество человек')
+		priceBtn.text('2 393 9393₽');
 });
