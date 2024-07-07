@@ -115,7 +115,7 @@
 	}
 }
 
-.price__input-wrapper {
+.select-wrapper {
 	position: relative;
 
 	@media (width <=620px) {
@@ -129,7 +129,7 @@
 	}
 }
 
-.price__input {
+.select {
 	position: relative;
 	width: 217px;
 	padding: 12px 26px 0 2px;
@@ -140,13 +140,17 @@
 	}
 
 	@media (width <=900px) {
+		padding: 9px 26px 0 14px;
+	}
+
+	@media (width <=600px) {
 		padding: 0 8px;
 		width: 150px;
 	}
 
 
 
-	&:hover .price__arrow {
+	&:hover .select__arrow {
 		background-color: #fff;
 		color: $_3;
 	}
@@ -155,7 +159,7 @@
 		outline: none;
 	}
 
-	&:focus-visible .price__arrow {
+	&:focus-visible .select__arrow {
 		color: $_3;
 	}
 
@@ -165,7 +169,7 @@
 }
 
 
-.price__title {
+.select__title {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 130%;
@@ -181,7 +185,7 @@
 	}
 }
 
-.price__placeholder {
+.select__placeholder {
 	max-width: 143px;
 	opacity: 0.7;
 	font-size: 16px;
@@ -197,7 +201,7 @@
 	}
 }
 
-.price__arrow {
+.select__arrow {
 	position: absolute;
 	right: 20px;
 	border-radius: 50%;
@@ -215,17 +219,18 @@
 		top: 17px;
 		right: 9px;
 	}
+
 	@media (width <=620px) {
 		top: 4px;
 		right: 5px;
 	}
 }
 
-.price__placeholder--date {}
+.select__placeholder--date {}
 
-.price__input--people {}
+.select--people {}
 
-.price__placeholder--options {
+.select__placeholder--options {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
@@ -233,7 +238,7 @@
 	text-overflow: ellipsis;
 }
 
-.price__input--options {}
+.select--options {}
 
 .price__button {
 	padding: 22px 0 22px;

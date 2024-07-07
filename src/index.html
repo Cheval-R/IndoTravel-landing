@@ -73,6 +73,7 @@
 		</div>
 	</header>
 	<main class="page">
+		<!-- !ABOUT -->
 		<section class="section about">
 			<div class="container">
 				<div class="about__wrapper">
@@ -115,6 +116,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- !TRAVEL / MAP -->
 		<section class="section travel">
 			<div class="container">
 				<div class="travel__wrapper">
@@ -207,6 +209,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- !CALCULATOR -->
 		<section class="calculator">
 			<div class="container container--calculator">
 				<div class="calculator__wrapper">
@@ -217,15 +220,15 @@
 					</div>
 					<div class="price">
 						<div class="price__container">
-							<div class="price__input-wrapper">
-								<div class="price__input price__input--date" tabindex="0">
-									<svg class="price__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<div class="select-wrapper">
+								<div class="select select--date" tabindex="0">
+									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
-									<p class="price__title">Дата</p>
-									<p class="price__placeholder price__placeholder--date">Выбери дату путешествия</p>
+									<p class="select__title">Дата</p>
+									<p class="select__placeholder select__placeholder--date">Выбери дату путешествия</p>
 								</div>
-								<div class="popup popup--date">
+								<div class="popup popup--date" id="calc-popup-date">
 									<h4 class="popup__title">Свободные даты</h4>
 									<div class="popup__wrapper">
 										<ul class="popup__month-list">
@@ -248,15 +251,15 @@
 								</div>
 							</div>
 
-							<div class="price__input-wrapper">
-								<div class="price__input price__input--people" tabindex="0">
-									<svg class="price__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<div class="select-wrapper">
+								<div class="select select--people" tabindex="0">
+									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
-									<p class="price__title">Люди</p>
-									<p class="price__placeholder price__placeholder--people">Укажи количество человек</p>
+									<p class="select__title">Люди</p>
+									<p class="select__placeholder select__placeholder--people">Укажи количество человек</p>
 								</div>
-								<div class="popup popup--people">
+								<div class="popup popup--people" id="calc-popup-people">
 									<ul class="popup__people-list">
 										<li class="popup__people-item" tabindex="0">1</li>
 										<li class="popup__people-item" tabindex="0">2</li>
@@ -267,15 +270,15 @@
 									</ul>
 								</div>
 							</div>
-							<div class="price__input-wrapper">
-								<div class="price__input price__input--options" tabindex="0">
-									<svg class="price__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<div class="select-wrapper">
+								<div class="select select--options" tabindex="0">
+									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
-									<p class="price__title">Опции</p>
-									<p class="price__placeholder price__placeholder--options">Выбери нужные опции</p>
+									<p class="select__title">Опции</p>
+									<p class="select__placeholder select__placeholder--options">Выбери нужные опции</p>
 								</div>
-								<div class="popup popup--options">
+								<div class="popup popup--options" id="calc-popup-options">
 									<h4 class="popup__title">Опции</h4>
 									<ul class="popup__options-list">
 										<li class="popup__options-item" tabindex="0">Няня</li>
@@ -289,6 +292,176 @@
 							<button class="price__button btn">Узнать цену</button>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<!-- !WHY -->
+		<section class="why">
+			<div class="container">
+				<h2 class="section__title section__title--why">Почему мы?</h2>
+				<p class="section__intro section__intro--why">Мы&nbsp;знаем, как сделать ваше путешествие незабываемым.</p>
+				<ul class="why__grid">
+					<li class="why__card">
+						<svg class="why__icon" width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<circle cx="22.000000" cy="22.000000" r="22.000000" fill="#FCB500" fill-opacity="1.000000" />
+						</svg>
+						<h3 class="why__title">Эксперты по&nbsp;Индонезии с&nbsp;2006&nbsp;года.</h3>
+						<p class="why__text">Уже 15&nbsp;лет мы&nbsp;открываем для всех желающих великолепные и&nbsp;загадочные острова Индонезии.</p>
+					</li>
+					<li class="why__card"> <svg class="why__icon" width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<circle cx="22.000000" cy="22.000000" r="22.000000" fill="#FCB500" fill-opacity="1.000000" />
+						</svg>
+						<h3 class="why__title">У&nbsp;нас цена = качество.</h3>
+						<p class="why__text">Ценность наших туров невозможно переоценить. Мы&nbsp;показываем&nbsp;то, о&nbsp;чем другие могут только мечтать.</p>
+					</li>
+					<li class="why__card"> <svg class="why__icon" width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<circle cx="22.000000" cy="22.000000" r="22.000000" fill="#FCB500" fill-opacity="1.000000" />
+						</svg>
+						<h3 class="why__title">Поддержка 24/7.</h3>
+						<p class="why__text">Мы&nbsp;не&nbsp;бросаем наших туристов одних в&nbsp;диких местах, мы&nbsp;помогаем справляться со&nbsp;всеми сложностями, которые могут у&nbsp;вас возникнуть.</p>
+					</li>
+					<li class="why__card"> <svg class="why__icon" width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<circle cx="22.000000" cy="22.000000" r="22.000000" fill="#FCB500" fill-opacity="1.000000" />
+						</svg>
+						<h3 class="why__title">Медицинская помощь.</h3>
+						<p class="why__text">Вместе с&nbsp;нами в&nbsp;путешествие отправляются специалисты по&nbsp;оказанию экстренной медицинской помощи. </p>
+					</li>
+					<li class="why__card"> <svg class="why__icon" width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<circle cx="22.000000" cy="22.000000" r="22.000000" fill="#FCB500" fill-opacity="1.000000" />
+						</svg>
+						<h3 class="why__title">Помощь с&nbsp;детьми.</h3>
+						<p class="why__text">Мы&nbsp;предоставим вам профессиональную няню, которая присмотрит за&nbsp;вашим чадом в&nbsp;часы вашего отсутствия.</p>
+					</li>
+					<li class="why__card"> <svg class="why__icon" width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<circle cx="22.000000" cy="22.000000" r="22.000000" fill="#FCB500" fill-opacity="1.000000" />
+						</svg>
+						<h3 class="why__title">Национальная кухня.</h3>
+						<p class="why__text">Вы&nbsp;узнаете на&nbsp;вкус чем&nbsp;отличается тумпенг от&nbsp;наси горенга и&nbsp;попробуете настоящий индонезийский суп бунтут.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- !ALBUM -->
+		<section class="album">
+			<div class="container">
+				<h2 class="section__title section__title--album">Фотоальбом</h2>
+				<p class="section__intro section__intro--album">За&nbsp;годы поездок у&nbsp;нас накопилось много фотографий из&nbsp;Индонезии. Представляем их&nbsp;вам.</p>
+			</div>
+			<div class="slider__wrapper">
+				<div class="album__slider">
+					<div class="album__item">
+						<img src="./img/album/img-6.jpg" alt="">
+					</div>
+					<div class="album__item">
+						<img src="./img/album/img-1.jpeg" alt="">
+					</div>
+					<div class="album__item">
+						<img src="./img/album/img-2.jpeg" alt="">
+					</div>
+					<div class="album__item">
+						<img src="./img/album/img-3.jpeg" alt="">
+					</div>
+					<div class="album__item">
+						<img src="./img/album/img-4.jpeg" alt="">
+					</div>
+					<div class="album__item">
+						<img src="./img/album/img-5.jpeg" alt="">
+					</div>
+				</div>
+
+				<button class="prev">
+					<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path id="arrow-prev" fill-rule="evenodd" clip-rule="evenodd" d="M54.25 44.4999C54.25 44.79 54.1348 45.0682 53.9296 45.2733C53.7245 45.4784 53.4463 45.5937 53.1562 45.5937H40.4841L45.1806 50.288C45.2823 50.3897 45.363 50.5105 45.418 50.6433C45.4731 50.7762 45.5014 50.9186 45.5014 51.0624C45.5014 51.2062 45.4731 51.3486 45.418 51.4815C45.363 51.6144 45.2823 51.7351 45.1806 51.8368C45.0789 51.9385 44.9582 52.0191 44.8253 52.0742C44.6925 52.1292 44.5501 52.1575 44.4063 52.1575C44.2624 52.1575 44.12 52.1292 43.9872 52.0742C43.8543 52.0191 43.7336 51.9385 43.6319 51.8368L37.0694 45.2743C36.9675 45.1727 36.8867 45.052 36.8316 44.9191C36.7764 44.7862 36.748 44.6438 36.748 44.4999C36.748 44.3561 36.7764 44.2136 36.8316 44.0807C36.8867 43.9478 36.9675 43.8271 37.0694 43.7255L43.6319 37.163C43.8373 36.9577 44.1158 36.8423 44.4063 36.8423C44.6967 36.8423 44.9752 36.9577 45.1806 37.163C45.386 37.3684 45.5014 37.647 45.5014 37.9374C45.5014 38.2279 45.386 38.5064 45.1806 38.7118L40.4841 43.4062H53.1562C53.4463 43.4062 53.7245 43.5214 53.9296 43.7265C54.1348 43.9316 54.25 44.2098 54.25 44.4999Z" fill="currentColor" />
+						<circle class="circle" cx=" 45" cy="45" r="44.5" stroke="currentColor" />
+					</svg>
+				</button>
+
+				<button class="next">
+					<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path id="arrow-next" fill-rule="evenodd" clip-rule="evenodd" d="M35.75 44.4999C35.75 44.79 35.8652 45.0682 36.0704 45.2733C36.2755 45.4784 36.5537 45.5937 36.8438 45.5937H49.5159L44.8194 50.288C44.7177 50.3897 44.637 50.5105 44.582 50.6433C44.5269 50.7762 44.4986 50.9186 44.4986 51.0624C44.4986 51.2062 44.5269 51.3486 44.582 51.4815C44.637 51.6144 44.7177 51.7351 44.8194 51.8368C44.9211 51.9385 45.0418 52.0191 45.1747 52.0742C45.3075 52.1292 45.4499 52.1575 45.5937 52.1575C45.7376 52.1575 45.88 52.1292 46.0128 52.0742C46.1457 52.0191 46.2664 51.9385 46.3681 51.8368L52.9306 45.2743C53.0325 45.1727 53.1133 45.052 53.1684 44.9191C53.2236 44.7862 53.252 44.6438 53.252 44.4999C53.252 44.3561 53.2236 44.2136 53.1684 44.0807C53.1133 43.9478 53.0325 43.8271 52.9306 43.7255L46.3681 37.163C46.1627 36.9577 45.8842 36.8423 45.5937 36.8423C45.3033 36.8423 45.0248 36.9577 44.8194 37.163C44.614 37.3684 44.4986 37.647 44.4986 37.9374C44.4986 38.2279 44.614 38.5064 44.8194 38.7118L49.5159 43.4062H36.8438C36.5537 43.4062 36.2755 43.5214 36.0704 43.7265C35.8652 43.9316 35.75 44.2098 35.75 44.4999Z" fill="currentColor" />
+						<circle class="circle" cx="45" cy="45" r="44.5" stroke="currentColor" />
+					</svg>
+				</button>
+			</div>
+		</section>
+		<!-- !RESERVE -->
+		<section class="reserve">
+			<div class="container">
+				<div class="reserve__wrapper">
+					<h2 class="reserve__title">Бронирование тура</h2>
+					<form class="form" action="">
+						<div class="choice-row">
+							<div class="select-wrapper">
+								<div class="select select--date" tabindex="0">
+									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
+									</svg>
+									<p class="select__title">Дата</p>
+									<p class="select__placeholder select__placeholder--date">Выбери дату путешествия</p>
+								</div>
+								<div class="popup popup--date" id="form-popup-date">
+									<h4 class="popup__title">Свободные даты</h4>
+									<div class="popup__wrapper">
+										<ul class="popup__month-list">
+											<li class="popup__month-item" tabindex="0">Ноябрь 2021</li>
+											<li class="popup__month-item" tabindex="0">Декабрь 2021</li>
+											<li class="popup__month-item" tabindex="0">Январь 2022</li>
+											<li class="popup__month-item" tabindex="0">Февраль 2022</li>
+											<li class="popup__month-item" tabindex="0"> Март 2022</li>
+											<li class="popup__month-item" tabindex="0">Апрель 2022</li>
+											<li class="popup__month-item" tabindex="0">Май 2022</li>
+										</ul>
+										<ul class="popup__days-list">
+											<li class="popup__days-item" tabindex="0">4.02 - 18.02</li>
+											<li class="popup__days-item" tabindex="0">7.02 - 21.02</li>
+											<li class="popup__days-item" tabindex="0">12.02 - 26.02</li>
+											<li class="popup__days-item" tabindex="0">20.02 - 6.03</li>
+										</ul>
+									</div>
+									<button class="popup__button popup__button--date btn">Готово</button>
+								</div>
+							</div>
+	
+							<div class="select-wrapper">
+								<div class="select select--people" tabindex="0">
+									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
+									</svg>
+									<p class="select__title">Люди</p>
+									<p class="select__placeholder select__placeholder--people">Укажи количество человек</p>
+								</div>
+								<div class="popup popup--people" id="form-popup-people">
+									<ul class="popup__people-list">
+										<li class="popup__people-item" tabindex="0">1</li>
+										<li class="popup__people-item" tabindex="0">2</li>
+										<li class="popup__people-item" tabindex="0">3</li>
+										<li class="popup__people-item" tabindex="0">4</li>
+										<li class="popup__people-item" tabindex="0">5</li>
+										<li class="popup__people-item" tabindex="0">6</li>
+									</ul>
+								</div>
+							</div>
+							<div class="select-wrapper">
+								<div class="select select--options" tabindex="0">
+									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
+									</svg>
+									<p class="select__title">Опции</p>
+									<p class="select__placeholder select__placeholder--options">Выбери нужные опции</p>
+								</div>
+								<div class="popup popup--options" id="form-popup-options">
+									<h4 class="popup__title">Опции</h4>
+									<ul class="popup__options-list">
+										<li class="popup__options-item" tabindex="0">Няня</li>
+										<li class="popup__options-item" tabindex="0">Персональное меню</li>
+										<li class="popup__options-item" tabindex="0">Персональный гид</li>
+										<li class="popup__options-item" tabindex="0">Улучшенная палатка</li>
+									</ul>
+									<button class="popup__button popup__button--options  btn">Готово</button>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>

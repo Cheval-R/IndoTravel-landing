@@ -1,154 +1,10 @@
-// !BURGER
-
-
-const burgerBtn = $('#burger');
-const nav = $('#nav');
-const navLink = $('.nav__link');
-
-
-burgerBtn.on('click', function (event) {
-	if (!burgerBtn.hasClass('active')) {
-		nav.slideDown(300);
-		burgerBtn.addClass('active');
-	}
-	else if (burgerBtn.hasClass('active')) {
-		nav.slideUp(300);
-		burgerBtn.removeClass('active');
-	}
-});
-
-
-navLink.on('click', function (event) {
-	nav.slideUp(300);
-	burgerBtn.removeClass('active');
-})
-
-
-// !SWIPER
-if (document.documentElement.clientWidth <= 670) {
-	sliderInit();
-}
-
-$(window).resize(function () {
-	if (document.documentElement.clientWidth <= 670) {
-		sliderInit();
-	}
-});
-
-function sliderInit() {
-	$('.slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		fade: true,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		dots: true,
-		infinite: true,
-		centerMode: true,
-	});
-}
-
-
-// ! ACCORDION
-
-
-$('.accordion__wrapper').accordion({
-	active: true,
-	collapsible: true,
-	heightStyle: 'content',
-	icons: {
-		header: 'acc-icon',
-		activeHeader: 'acc-icon acc-icon-active',
-	}
-});
-
-
-
-
-const accHeader = $('.accordion__title');
-const bali = $('.bali')
-const yava = $('.yava')
-const sulavesi = $('.sulavesi')
-const calimanthan = $('.calimanthan')
-const sumathra = $('.sumathra')
-
-
-accHeader.on('click', function (event) {
-	// console.log(event.currentTarget);
-
-	if ($(this).hasClass('accordion__title--yava')) {
-		if ($(this).attr('aria-expanded') === "true") {
-			yava.css('fill', '#FCB500');
-
-			bali.css('fill', '#FFFFFF');
-			sulavesi.css('fill', '#FFFFFF');
-			calimanthan.css('fill', '#FFFFFF');
-			sumathra.css('fill', '#FFFFFF');
-		} else {
-			yava.css('fill', '#FFFFFF');
-		}
-	}
-	if ($(this).hasClass('accordion__title--bali')) {
-		if ($(this).attr('aria-expanded') === "true") {
-			bali.css('fill', '#FCB500');
-
-			yava.css('fill', '#FFFFFF');
-			sulavesi.css('fill', '#FFFFFF');
-			calimanthan.css('fill', '#FFFFFF');
-			sumathra.css('fill', '#FFFFFF');
-		} else {
-			bali.css('fill', '#FFFFFF');
-		}
-	}
-	if ($(this).hasClass('accordion__title--sulavesi')) {
-		if ($(this).attr('aria-expanded') === "true") {
-			sulavesi.css('fill', '#FCB500');
-
-
-			yava.css('fill', '#FFFFFF');
-			bali.css('fill', '#FFFFFF');
-			calimanthan.css('fill', '#FFFFFF');
-			sumathra.css('fill', '#FFFFFF');
-		} else {
-			sulavesi.css('fill', '#FFFFFF');
-		}
-	}
-	if ($(this).hasClass('accordion__title--calimanthan')) {
-		if ($(this).attr('aria-expanded') === "true") {
-			calimanthan.css('fill', '#FCB500');
-
-			yava.css('fill', '#FFFFFF');
-			bali.css('fill', '#FFFFFF');
-			sulavesi.css('fill', '#FFFFFF');
-			sumathra.css('fill', '#FFFFFF');
-		} else {
-			calimanthan.css('fill', '#FFFFFF');
-		}
-	}
-	if ($(this).hasClass('accordion__title--sumathra')) {
-		if ($(this).attr('aria-expanded') === "true") {
-			sumathra.css('fill', '#FCB500');
-
-			yava.css('fill', '#FFFFFF');
-			bali.css('fill', '#FFFFFF');
-			sulavesi.css('fill', '#FFFFFF');
-			calimanthan.css('fill', '#FFFFFF');
-		} else {
-			sumathra.css('fill', '#FFFFFF');
-		}
-	}
-});
-
-
-
 // !CALCULATOR
 const priceBtn = $('.price__button');
 
 // * Date
 
-const dateWrapper = $('.price__input--date');
-const datePopup = $('.popup--date');
+const dateWrapper = $('.select--date');
+const datePopup = $('#calc-popup-date');
 const monthList = $('.popup__month-list');
 const monthItem = $('.popup__month-item');
 const daysList = $('.popup__days-list');
@@ -224,14 +80,14 @@ $(document).click(function (event) {
 	}
 })
 
-const datePlaceholder = $('.price__placeholder--date');
+const datePlaceholder = $('.select__placeholder--date');
 // console.log(datePlaceholder.text());
 const dateBtn = $('.popup__button--date');
 dateBtn.on('click', function (event) {
 	if (selectedDays !== undefined && selectedDays !== null) {
 		datePlaceholder.text(selectedDays);
 		priceBtn.text('Узнать цену');
-		$('.price__input--date').css({
+		$('.select--date').css({
 			'outline': "none"
 		})
 		datePopup.slideToggle(300);
@@ -271,10 +127,10 @@ function takeNextMonth(i) {
 
 // * People
 
-const peopleWrapper = $('.price__input--people');
-const peoplePopup = $('.popup--people');
+const peopleWrapper = $('.select--people');
+const peoplePopup = $('#calc-popup-people');
 const peopleList = $('.popup__people-list');
-const peoplePlaceholder = $('.price__placeholder--people');
+const peoplePlaceholder = $('.select__placeholder--people');
 peoplePopup.slideToggle();
 let selectedNumber;
 $('.popup__people-list').on('click', '.popup__people-item', function (event) {
@@ -285,7 +141,7 @@ $('.popup__people-list').on('click', '.popup__people-item', function (event) {
 	}
 	peoplePlaceholder.text(selectedNumber + " " + people);
 	priceBtn.text('Узнать цену');
-	$('.price__input--people').css({
+	$('.select--people').css({
 		'outline': "none"
 	})
 	peoplePopup.slideToggle(300);
@@ -304,8 +160,8 @@ $(document).click(function (event) {
 
 // * Options
 
-const optionsWrapper = $('.price__input--options');
-const optionsPopup = $('.popup--options');
+const optionsWrapper = $('.select--options');
+const optionsPopup = $('#calc-popup-options');
 optionsPopup.slideToggle();
 
 
@@ -318,7 +174,7 @@ const optionsList = $('.popup__options-list');
 const optionsItem = $('.popup__options-item');
 const optionsBtn = $('.popup__button--options');
 
-const optionsPlaceholder = $('.price__placeholder--options');
+const optionsPlaceholder = $('.select__placeholder--options');
 optionsList.on('click', '.popup__options-item', function (event) {
 	// console.log($(this).text());
 	$(this).toggleClass('popup__options-item--checked');
@@ -339,7 +195,7 @@ optionsBtn.on('click', function () {
 		// console.log(selectedOptions);
 		optionsPlaceholder.text(selectedOptions);
 		priceBtn.text('Узнать цену');
-		$('.price__input--options').css({
+		$('.select--options').css({
 			'outline': "none"
 		})
 		optionsPopup.slideToggle(300);
@@ -361,12 +217,12 @@ $(document).click(function (event) {
 
 priceBtn.on('click', function () {
 	if (datePlaceholder.text() === 'Выбери дату путешествия') {
-		$('.price__input--date').css({
+		$('.select--date').css({
 			'outline': "1px solid rgba(255, 0, 0, 0.5)"
 		})
 	}
 	if (peoplePlaceholder.text() === 'Укажи количество человек') {
-		$('.price__input--people').css({
+		$('.select--people').css({
 			'outline': "1px solid rgba(255, 0, 0, 0.5)"
 		})
 	}
@@ -374,3 +230,28 @@ priceBtn.on('click', function () {
 	if (datePlaceholder.text() !== 'Выбери дату путешествия' && peoplePlaceholder.text() !== 'Укажи количество человек')
 		priceBtn.text('2 393 9393₽');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// !FORM
+
+
+const formPopupDate = $('#form-popup-date');
+const formPopupPeople = $('#form-popup-people');
+const formPopupOptions = $('#form-popup-options');
+
+formPopupDate.slideToggle();
+formPopupPeople.slideToggle();
+formPopupOptions.slideToggle();
