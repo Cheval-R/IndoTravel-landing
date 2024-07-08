@@ -80,9 +80,9 @@ $(document).click(function (event) {
 	}
 })
 
-const datePlaceholder = $('.select__placeholder--date');
+const datePlaceholder = $('#calc-date-placeholder');
 // console.log(datePlaceholder.text());
-const dateBtn = $('.popup__button--date');
+const dateBtn = $('#calc-button-date');
 dateBtn.on('click', function (event) {
 	if (selectedDays !== undefined && selectedDays !== null) {
 		datePlaceholder.text(selectedDays);
@@ -130,10 +130,10 @@ function takeNextMonth(i) {
 const peopleWrapper = $('.select--people');
 const peoplePopup = $('#calc-popup-people');
 const peopleList = $('.popup__people-list');
-const peoplePlaceholder = $('.select__placeholder--people');
+const peoplePlaceholder = $('#calc-people-placeholder');
 peoplePopup.slideToggle();
 let selectedNumber;
-$('.popup__people-list').on('click', '.popup__people-item', function (event) {
+$('.popup__people-list').on('click', '.popup__people-item--calc', function (event) {
 	selectedNumber = $(this).text();
 	let people = 'человек';
 	if (selectedNumber === '2' || selectedNumber === '3' || selectedNumber === '4') {
@@ -170,11 +170,11 @@ optionsWrapper.on('click', function (event) {
 	optionsPopup.slideToggle();
 });
 
-const optionsList = $('.popup__options-list');
-const optionsItem = $('.popup__options-item');
-const optionsBtn = $('.popup__button--options');
+const optionsList = $('.popup__options-list--calc');
+const optionsItem = $('.popup__options-item--calc');
+const optionsBtn = $('#calc-button-options');
 
-const optionsPlaceholder = $('.select__placeholder--options');
+const optionsPlaceholder = $('#calc-options-placeholder');
 optionsList.on('click', '.popup__options-item', function (event) {
 	// console.log($(this).text());
 	$(this).toggleClass('popup__options-item--checked');
@@ -230,28 +230,3 @@ priceBtn.on('click', function () {
 	if (datePlaceholder.text() !== 'Выбери дату путешествия' && peoplePlaceholder.text() !== 'Укажи количество человек')
 		priceBtn.text('2 393 9393₽');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// !FORM
-
-
-const formPopupDate = $('#form-popup-date');
-const formPopupPeople = $('#form-popup-people');
-const formPopupOptions = $('#form-popup-options');
-
-formPopupDate.slideToggle();
-formPopupPeople.slideToggle();
-formPopupOptions.slideToggle();

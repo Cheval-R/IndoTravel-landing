@@ -1,15 +1,40 @@
 .reserve {
 	padding: 150px 0;
+
+	@media (width <=1100px) {
+		padding: 120px 0;
+	}
+
+	@media (width <=900px) {
+		padding: 90px 0;
+	}
 }
 
 .container--reserve {
 	max-width: 980px;
+
+	@media (width <=1100px) {
+		max-width: 940px;
+	}
+
+	@media (width <=900px) {
+		max-width: 700px;
+	}
 }
 
 .reserve__wrapper {
 	border-radius: 30px;
 	border: 1px solid $_4;
 	padding: 60px 100px;
+
+	@media (width <=1100px) {
+		padding: 60px 80px 69px;
+	}
+
+	@media (width <=900px) {
+		padding: 40px 60px;
+		border-radius: 20px;
+	}
 }
 
 .reserve__title {
@@ -19,27 +44,45 @@
 	line-height: 150%;
 	text-align: center;
 	margin-bottom: 60px;
+
+	@media (width <=1100px) {
+		font-size: 31px;
+		margin-bottom: 57px;
+	}
+
+	@media (width <=900px) {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
 }
 
 .form {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+
+	@media (width <=900px) {
+		gap: 33px;
+	}
 }
 
 .form__choice {
 	display: flex;
-	gap: 59px;
+	gap: 58px;
+
+	@media (width <=900px) {
+		gap: 35px;
+	}
 
 	.select-wrapper {
 		border-radius: 12px;
 		border: 1px solid $_4;
 		padding: 12px 17px 12px 15px;
-		max-width: 221px;
+		flex-basis: 221px;
 	}
 
 	.select {
-		width: 189px;
+		width: 100%;
 	}
 
 	.select--date,
@@ -47,6 +90,21 @@
 	.select--people {
 		padding: unset;
 	}
+
+	.select .select-error {
+		bottom: -35px;
+	}
+
+	.select__arrow {
+		right: -4px;
+		top: 16px;
+	}
+}
+
+.select-error {
+	position: absolute;
+	font-size: 16px;
+	width: max-content;
 }
 
 .form__date-input,
@@ -84,6 +142,12 @@
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 130%;
+
+	@media (width <=900px) {
+		height: 83px;
+		padding: 45px 15px 21px;
+		border-radius: 7px;
+	}
 }
 
 .form__name-input::placeholder,
@@ -95,6 +159,10 @@
 .contacts-row {
 	display: flex;
 	gap: 60px;
+
+	@media (width <=900px) {
+		gap: 20px;
+	}
 }
 
 .form__input-wrapper--mail,
@@ -109,12 +177,14 @@
 
 .form__footer {
 	display: flex;
-	// justify-content: space-between;
+	justify-content: space-between;
 	gap: 60px;
 }
 
 .form__result {
 	flex-basis: calc(50% - 30px);
+
+
 }
 
 .form__details {
@@ -133,4 +203,13 @@
 .form__button {
 	flex-basis: calc(50% - 30px);
 	padding: 24px 100px 25px 111px;
+
+	@media (width <=1100px) {
+		max-width: 298px;
+		padding: 18px 81px 18px 81px;
+		height: 63px;
+		margin-top: -5px;
+		letter-spacing: -0.032rem;
+		border-radius: 10px;
+	}
 }

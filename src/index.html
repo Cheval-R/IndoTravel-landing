@@ -226,7 +226,7 @@
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
 									<p class="select__title">Дата</p>
-									<p class="select__placeholder select__placeholder--date">Выбери дату путешествия</p>
+									<p class="select__placeholder select__placeholder--date" id="calc-date-placeholder">Выбери дату путешествия</p>
 								</div>
 								<div class="popup popup--date" id="calc-popup-date">
 									<h4 class="popup__title">Свободные даты</h4>
@@ -247,7 +247,7 @@
 											<li class="popup__days-item" tabindex="0">20.02 - 6.03</li>
 										</ul>
 									</div>
-									<button class="popup__button popup__button--date btn">Готово</button>
+									<button class="popup__button popup__button--date btn" id="calc-button-date">Готово</button>
 								</div>
 							</div>
 
@@ -257,16 +257,16 @@
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
 									<p class="select__title">Люди</p>
-									<p class="select__placeholder select__placeholder--people">Укажи количество человек</p>
+									<p class="select__placeholder select__placeholder--people" id="calc-people-placeholder">Укажи количество человек</p>
 								</div>
 								<div class="popup popup--people" id="calc-popup-people">
 									<ul class="popup__people-list">
-										<li class="popup__people-item" tabindex="0">1</li>
-										<li class="popup__people-item" tabindex="0">2</li>
-										<li class="popup__people-item" tabindex="0">3</li>
-										<li class="popup__people-item" tabindex="0">4</li>
-										<li class="popup__people-item" tabindex="0">5</li>
-										<li class="popup__people-item" tabindex="0">6</li>
+										<li class="popup__people-item popup__people-item--calc" tabindex="0">1</li>
+										<li class="popup__people-item popup__people-item--calc" tabindex="0">2</li>
+										<li class="popup__people-item popup__people-item--calc" tabindex="0">3</li>
+										<li class="popup__people-item popup__people-item--calc" tabindex="0">4</li>
+										<li class="popup__people-item popup__people-item--calc" tabindex="0">5</li>
+										<li class="popup__people-item popup__people-item--calc" tabindex="0">6</li>
 									</ul>
 								</div>
 							</div>
@@ -276,17 +276,17 @@
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
 									<p class="select__title">Опции</p>
-									<p class="select__placeholder select__placeholder--options">Выбери нужные опции</p>
+									<p class="select__placeholder select__placeholder--options" id="calc-options-placeholder">Выбери нужные опции</p>
 								</div>
 								<div class="popup popup--options" id="calc-popup-options">
 									<h4 class="popup__title">Опции</h4>
-									<ul class="popup__options-list">
-										<li class="popup__options-item" tabindex="0">Няня</li>
-										<li class="popup__options-item" tabindex="0">Персональное меню</li>
-										<li class="popup__options-item" tabindex="0">Персональный гид</li>
-										<li class="popup__options-item" tabindex="0">Улучшенная палатка</li>
+									<ul class="popup__options-list popup__options-list--calc">
+										<li class="popup__options-item popup__options-item--clac" tabindex="0">Няня</li>
+										<li class="popup__options-item popup__options-item--clac" tabindex="0">Персональное меню</li>
+										<li class="popup__options-item popup__options-item--clac" tabindex="0">Персональный гид</li>
+										<li class="popup__options-item popup__options-item--clac" tabindex="0">Улучшенная палатка</li>
 									</ul>
-									<button class="popup__button popup__button--options  btn">Готово</button>
+									<button class="popup__button popup__button--options  btn" id="calc-button-options">Готово</button>
 								</div>
 							</div>
 							<button class="price__button btn">Узнать цену</button>
@@ -397,12 +397,12 @@
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
 									<p class="select__title">Дата</p>
-									<p class="select__placeholder select__placeholder--date">Выбери дату путешествия</p>
+									<p class="select__placeholder select__placeholder--date" id="form-date-placeholder">Выбери дату путешествия</p>
 									<input class="form__date-input" name="date" id="date" type="text">
 								</div>
 								<div class="popup popup--date" id="form-popup-date">
 									<h4 class="popup__title">Свободные даты</h4>
-									<div class="popup__wrapper">
+									<div class="popup__wrapper popup__wrapper ">
 										<ul class="popup__month-list">
 											<li class="popup__month-item" tabindex="0">Ноябрь 2021</li>
 											<li class="popup__month-item" tabindex="0">Декабрь 2021</li>
@@ -419,7 +419,7 @@
 											<li class="popup__days-item" tabindex="0">20.02 - 6.03</li>
 										</ul>
 									</div>
-									<button class="popup__button popup__button--date btn">Готово</button>
+									<button type="button" class="popup__button popup__button--date btn" id="form-button-date">Готово</button>
 								</div>
 							</div>
 
@@ -429,17 +429,17 @@
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
 									<p class="select__title">Люди</p>
-									<p class="select__placeholder select__placeholder--people">Укажи количество человек</p>
+									<p class="select__placeholder select__placeholder--people" id="form-people-placeholder">Укажи количество человек</p>
 									<input class="form__people-input" name="people" id="people" type="text">
 								</div>
 								<div class="popup popup--people" id="form-popup-people">
 									<ul class="popup__people-list">
-										<li class="popup__people-item" tabindex="0">1</li>
-										<li class="popup__people-item" tabindex="0">2</li>
-										<li class="popup__people-item" tabindex="0">3</li>
-										<li class="popup__people-item" tabindex="0">4</li>
-										<li class="popup__people-item" tabindex="0">5</li>
-										<li class="popup__people-item" tabindex="0">6</li>
+										<li class="popup__people-item popup__people-item--form" tabindex="0">1</li>
+										<li class="popup__people-item popup__people-item--form" tabindex="0">2</li>
+										<li class="popup__people-item popup__people-item--form" tabindex="0">3</li>
+										<li class="popup__people-item popup__people-item--form" tabindex="0">4</li>
+										<li class="popup__people-item popup__people-item--form" tabindex="0">5</li>
+										<li class="popup__people-item popup__people-item--form" tabindex="0">6</li>
 									</ul>
 								</div>
 							</div>
@@ -449,18 +449,18 @@
 										<path d="M1.70538 4.29458C2.09466 3.90531 2.72569 3.90496 3.11538 4.29381L6.29366 7.46517C6.68401 7.85467 7.31599 7.85467 7.70634 7.46517L10.8846 4.29381C11.2743 3.90496 11.9053 3.90531 12.2946 4.29458C12.6842 4.68415 12.6842 5.31578 12.2946 5.70535L7.70711 10.2929C7.31658 10.6834 6.68342 10.6834 6.29289 10.2929L1.70538 5.70535C1.31581 5.31578 1.31581 4.68415 1.70538 4.29458Z" />
 									</svg>
 									<p class="select__title">Опции</p>
-									<p class="select__placeholder select__placeholder--options">Выбери нужные опции</p>
+									<p class="select__placeholder select__placeholder--options" id="form-options-placeholder">Выбери нужные опции</p>
 									<input class="form__options-input" name="options" id="options" type="text">
 								</div>
 								<div class="popup popup--options" id="form-popup-options">
 									<h4 class="popup__title">Опции</h4>
-									<ul class="popup__options-list">
-										<li class="popup__options-item" tabindex="0">Няня</li>
-										<li class="popup__options-item" tabindex="0">Персональное меню</li>
-										<li class="popup__options-item" tabindex="0">Персональный гид</li>
-										<li class="popup__options-item" tabindex="0">Улучшенная палатка</li>
+									<ul class="popup__options-list popup__options-list--form" id="form-options-list">
+										<li class="popup__options-item popup__options-item--form" tabindex="0">Няня</li>
+										<li class="popup__options-item popup__options-item--form" tabindex="0">Персональное меню</li>
+										<li class="popup__options-item popup__options-item--form" tabindex="0">Персональный гид</li>
+										<li class="popup__options-item popup__options-item--form" tabindex="0">Улучшенная палатка</li>
 									</ul>
-									<button class="popup__button popup__button--options  btn">Готово</button>
+									<button type="button" class="popup__button popup__button--options  btn" id="form-button-options">Готово</button>
 								</div>
 							</div>
 						</div>

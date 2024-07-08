@@ -228,7 +228,13 @@
 
 .select__placeholder--date {}
 
-.select--people {}
+.select--date,
+.select--people,
+.select--options {
+	position: relative;
+}
+
+
 
 .select__placeholder--options {
 	display: -webkit-box;
@@ -285,7 +291,7 @@
 	background: rgb(255, 255, 255);
 	width: max-content;
 
-
+z-index: 5;
 	position: absolute;
 	top: 123px;
 }
