@@ -386,11 +386,11 @@
 		</section>
 		<!-- !RESERVE -->
 		<section class="reserve">
-			<div class="container">
+			<div class="container container--reserve">
 				<div class="reserve__wrapper">
 					<h2 class="reserve__title">Бронирование тура</h2>
 					<form class="form" action="">
-						<div class="choice-row">
+						<div class="form__choice">
 							<div class="select-wrapper">
 								<div class="select select--date" tabindex="0">
 									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -398,6 +398,7 @@
 									</svg>
 									<p class="select__title">Дата</p>
 									<p class="select__placeholder select__placeholder--date">Выбери дату путешествия</p>
+									<input class="form__date-input" name="date" id="date" type="text">
 								</div>
 								<div class="popup popup--date" id="form-popup-date">
 									<h4 class="popup__title">Свободные даты</h4>
@@ -421,7 +422,7 @@
 									<button class="popup__button popup__button--date btn">Готово</button>
 								</div>
 							</div>
-	
+
 							<div class="select-wrapper">
 								<div class="select select--people" tabindex="0">
 									<svg class="select__arrow" width="24" height="24" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -429,6 +430,7 @@
 									</svg>
 									<p class="select__title">Люди</p>
 									<p class="select__placeholder select__placeholder--people">Укажи количество человек</p>
+									<input class="form__people-input" name="people" id="people" type="text">
 								</div>
 								<div class="popup popup--people" id="form-popup-people">
 									<ul class="popup__people-list">
@@ -448,6 +450,7 @@
 									</svg>
 									<p class="select__title">Опции</p>
 									<p class="select__placeholder select__placeholder--options">Выбери нужные опции</p>
+									<input class="form__options-input" name="options" id="options" type="text">
 								</div>
 								<div class="popup popup--options" id="form-popup-options">
 									<h4 class="popup__title">Опции</h4>
@@ -460,6 +463,27 @@
 									<button class="popup__button popup__button--options  btn">Готово</button>
 								</div>
 							</div>
+						</div>
+						<div class="form__input-wrapper form__input-wrapper--name">
+							<label for="name">ФИО</label>
+							<input class="form__name-input" type="text" id="name" name="name" placeholder="Введите ваше ФИО">
+						</div>
+						<div class="contacts-row">
+							<div class="form__input-wrapper form__input-wrapper--mail">
+								<label for="email">Email</label>
+								<input class="form__mail-input" type="email" name="mail" id="mail" placeholder="Введите адрес электронной почты">
+							</div>
+							<div class="form__input-wrapper form__input-wrapper--tel">
+								<label for="tel">Телефон</label>
+								<input class="form__tel-input" type="tel" name="tel" id="tel" placeholder="Введите номер телефона">
+							</div>
+						</div>
+						<div class="form__footer">
+							<div class="form__result">
+								<p class="form__details">24 ноября - 7 декабря, 4 человека</p>
+								<p class="form__price">459 590₽</p>
+							</div>
+							<button class="form__button btn" type="submit">Забронировать</button>
 						</div>
 					</form>
 				</div>
