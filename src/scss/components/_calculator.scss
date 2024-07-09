@@ -56,7 +56,7 @@
 .calculator__wrapper {
 	@media (width <=900px) {
 		display: flex;
-		gap: 12px;
+		gap: 14px;
 	}
 
 	@media (width <=620px) {
@@ -96,7 +96,7 @@
 
 	display: flex;
 	gap: 39px;
-	
+
 	@media (width <=1200px) {
 		gap: 5px;
 		padding: 23px 20px 20px 19px;
@@ -111,7 +111,7 @@
 	}
 
 	@media (width <=620px) {
-		padding: 17px 25px 26px;
+		padding: 15px 25px 26px;
 		gap: 0;
 	}
 }
@@ -210,6 +210,7 @@
 	// width: 24px;
 	// height: 24px;
 	top: 30px;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in;
 
 	@media (width <=1200px) {
 		top: 29px;
@@ -336,6 +337,9 @@
 	font-size: 14px;
 	font-weight: 700;
 	cursor: pointer;
+	outline-color: $_opacity;
+
+	transition: color 0.3s ease-in, outline-color 0.3s ease-in;
 
 	&:hover {
 		color: $_3;
@@ -370,9 +374,11 @@
 	font-size: 14px;
 	font-weight: 700;
 	cursor: pointer;
+	transition: color 0.3s ease-in, ;
+
 
 	&:hover,
-	&:focus-visible {
+	s &:focus-visible {
 		outline: none;
 		font-size: 16px;
 	}
@@ -451,8 +457,7 @@
 		display: block;
 		width: 16px;
 		height: 16px;
-
-
+		transition: border-color 0.3s ease-in;
 
 		border: 1px solid rgb(48, 48, 48);
 		background: rgb(255, 255, 255);

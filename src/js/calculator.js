@@ -217,12 +217,12 @@ $(document).click(function (event) {
 
 priceBtn.on('click', function () {
 	if (datePlaceholder.text() === 'Выбери дату путешествия') {
-		$('.select--date').css({
+		$('#calc-select-date').css({
 			'outline': "1px solid rgba(255, 0, 0, 0.5)"
 		})
 	}
 	if (peoplePlaceholder.text() === 'Укажи количество человек') {
-		$('.select--people').css({
+		$('#calc-select-people').css({
 			'outline': "1px solid rgba(255, 0, 0, 0.5)"
 		})
 	}

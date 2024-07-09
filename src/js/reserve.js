@@ -46,14 +46,14 @@ formMonthItem.on('click', function (event) {
 			// !Вносим список дней на страницу
 			formDaysList.fadeOut(300);
 			// setTimeout(() => {
-				formDaysList.html(`
+			formDaysList.html(`
 					<li class="popup__days-item" tabindex="0">4.${currentMonth} - 18.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">7.${currentMonth} - 21.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">12.${currentMonth} - 26.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">20.${currentMonth} - 6.${nextMonth}</li>
 					`);
-				// !Анимация появления столбца с днями
-				formDaysList.fadeIn(300);
+			// !Анимация появления столбца с днями
+			formDaysList.fadeIn(300);
 			// }, 300);
 
 
@@ -362,3 +362,48 @@ validator
 
 
 
+
+
+
+
+
+
+
+// ! FOOTER CALLBACK
+
+const footerValidator = new JustValidate('.footer__form', {
+	errorLabelCssClass: 'select-error--footer'
+});
+
+footerValidator
+	.addField('#footer-email', [
+		{
+			rule: 'required',
+			errorMessage: 'Введите email',
+			successMessage: 'Готово',
+		},
+		{
+			rule: 'email',
+			errorMessage: 'Некорректный email'
+		}
+	])
+	.onSuccess(event => {
+		event.preventDefault(); // Prevent the default form submission
+		console.log(event);
+		const formData = {
+			email: $('#footer-email').val(),
+		};
+
+		$.ajax({
+			url: 'https://jsonplaceholder.typicode.com/posts',
+			type: 'POST',
+			data: formData,
+			success(data) {
+				console.log(data);
+				$('.success-message').css('display', 'block');
+			},
+			error() {
+				console.log('err');
+			}
+		});
+	});

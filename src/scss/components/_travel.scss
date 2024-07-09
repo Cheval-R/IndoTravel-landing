@@ -234,10 +234,7 @@
 	width: 30px;
 	height: 30px;
 	margin-left: 0;
-
-	@media(width <=900px) {
-		margin-right: 70px;
-	}
+	margin-right: 70px;
 
 	@media (width <=600px) {
 		width: 16px;
@@ -255,6 +252,11 @@
 .map {
 	width: 480px;
 	height: 410px;
+	transform: translateY(-24px);
+
+	svg>* {
+		transition: fill 0.3s ease-in;
+	}
 
 	@media (width <=1200px) {
 		width: clamp(319px, 31vw, 480px);

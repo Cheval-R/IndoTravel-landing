@@ -116,7 +116,7 @@ iframe {
 	font-weight: 700;
 	line-height: 1.5;
 	color: $_2;
-	outline-color: $opacity;
+	outline-color: $_opacity;
 	transition: background-color 0.3s ease-in, outline-color 0.3s ease-in;
 
 	@media (hover:hover) {
