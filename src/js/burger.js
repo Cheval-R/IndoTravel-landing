@@ -23,3 +23,9 @@ navLink.on('click', function (event) {
 	burgerBtn.removeClass('active');
 })
 
+
+$(document).click(function (event) {
+	if (!nav.is(event.target) && nav.has(event.target).length === 0 && !burgerBtn.is(event.target) && burgerBtn.has(event.target).length === 0) {
+		nav.slideUp(300);
+	}
+})

@@ -1,8 +1,8 @@
 // * Date
 
-const formDateWrapper = $('.select--date');
+const formDateWrapper = $('#form-select-date');
 const formDatePopup = $('#form-popup-date');
-const formMonthItem = $('.popup__month-item');
+const formMonthItem = $('.popup__month-item--form');
 const formDaysList = $('.popup__days-list');
 formDatePopup.slideUp();
 formDaysList.hide(300);
@@ -43,19 +43,19 @@ formMonthItem.on('click', function (event) {
 
 			let nextMonth = takeNextMonth(i);
 			let currentMonth = takeCurrentMonth(i);
-			formDaysList.fadeOut(300);
 			// !Вносим список дней на страницу
-			setTimeout(() => {
+			formDaysList.fadeOut(300);
+			// setTimeout(() => {
 				formDaysList.html(`
 					<li class="popup__days-item" tabindex="0">4.${currentMonth} - 18.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">7.${currentMonth} - 21.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">12.${currentMonth} - 26.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">20.${currentMonth} - 6.${nextMonth}</li>
-				`);
-			}, 300);
+					`);
+				// !Анимация появления столбца с днями
+				formDaysList.fadeIn(300);
+			// }, 300);
 
-			// !Анимация появления столбца с днями
-			formDaysList.fadeIn(300);
 
 			$('.popup__days-list').on('click', '.popup__days-item', function (event) {
 				// console.log($(this).text()); // Вывод текста кликнутого элемента для примера
@@ -148,7 +148,7 @@ function translateDateRange(dateRange) {
 
 // * People
 
-const formPeopleWrapper = $('.select--people');
+const formPeopleWrapper = $('#form-select-people');
 const formPeoplePopup = $('#form-popup-people');
 const formPeoplePlaceholder = $('#form-people-placeholder');
 formPeoplePopup.slideUp();
@@ -186,7 +186,8 @@ $(document).click(function (event) {
 
 // * Options
 
-const formOptionsWrapper = $('.select--options');
+const formOptionsWrapper = $('#form-select-options');
+console.log(formOptionsWrapper);
 const formOptionsPopup = $('#form-popup-options');
 formOptionsPopup.slideUp();
 
@@ -340,7 +341,7 @@ validator
 
 		$('.form__details').text(`${translateDateRange(dateInput.val())}, ${peopleResult}`);
 		$('.form__price').text(`${Math.floor(Math.random() * (999 - 100 + 1)) + 100} ${Math.floor(Math.random() * (999 - 100 + 1)) + 100}₽`);
-		
+
 		$.ajax({
 			url: 'https://jsonplaceholder.typicode.com/posts',
 			type: 'POST',

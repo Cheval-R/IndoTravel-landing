@@ -3,10 +3,10 @@ const priceBtn = $('.price__button');
 
 // * Date
 
-const dateWrapper = $('.select--date');
+const dateWrapper = $('#calc-select-date');
 const datePopup = $('#calc-popup-date');
 const monthList = $('.popup__month-list');
-const monthItem = $('.popup__month-item');
+const monthItem = $('.popup__month-item--calc');
 const daysList = $('.popup__days-list');
 datePopup.slideToggle();
 daysList.hide(300);
@@ -49,14 +49,14 @@ monthItem.on('click', function (event) {
 			let currentMonth = takeCurrentMonth(i);
 			daysList.fadeOut(300);
 			// !Вносим список дней на страницу
-			setTimeout(() => {
-				daysList.html(`
+			// setTimeout(() => {
+			daysList.html(`
 					<li class="popup__days-item" tabindex="0">4.${currentMonth} - 18.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">7.${currentMonth} - 21.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">12.${currentMonth} - 26.${currentMonth}</li>
 					<li class="popup__days-item" tabindex="0">20.${currentMonth} - 6.${nextMonth}</li>
 				`);
-			}, 300);
+			// }, 300);
 
 			// !Анимация появления столбца с днями
 			daysList.fadeIn(300);
@@ -127,7 +127,7 @@ function takeNextMonth(i) {
 
 // * People
 
-const peopleWrapper = $('.select--people');
+const peopleWrapper = $('#calc-select-people');
 const peoplePopup = $('#calc-popup-people');
 const peopleList = $('.popup__people-list');
 const peoplePlaceholder = $('#calc-people-placeholder');
@@ -160,7 +160,7 @@ $(document).click(function (event) {
 
 // * Options
 
-const optionsWrapper = $('.select--options');
+const optionsWrapper = $('#calc-select-options');
 const optionsPopup = $('#calc-popup-options');
 optionsPopup.slideToggle();
 
@@ -226,7 +226,7 @@ priceBtn.on('click', function () {
 			'outline': "1px solid rgba(255, 0, 0, 0.5)"
 		})
 	}
-	
+
 	if (datePlaceholder.text() !== 'Выбери дату путешествия' && peoplePlaceholder.text() !== 'Укажи количество человек')
 		priceBtn.text('2 393 9393₽');
 });
