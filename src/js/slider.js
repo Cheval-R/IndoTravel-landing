@@ -51,24 +51,24 @@ function sliderMove() {
 	prevSection.on('mouseenter', function () {
 		slickTrack.finish().animate({
 			left: '+=300px'
-		}, 500); // 500 - это продолжительность анимации в миллисекундах
+		}, 200); // 200 - это продолжительность анимации в миллисекундах
 	});
 
 	prevSection.on('mouseleave', function () {
 		slickTrack.finish().animate({
 			left: '-=300px'
-		}, 500); // 500 - это продолжительность анимации в миллисекундах
+		}, 200); // 200 - это продолжительность анимации в миллисекундах
 	});
 	nextSection.on('mouseenter', function () {
 		slickTrack.finish().animate({
 			left: '-=300px'
-		}, 500); // 500 - это продолжительность анимации в миллисекундах
+		}, 200); // 200 - это продолжительность анимации в миллисекундах
 	});
 
 	nextSection.on('mouseleave', function () {
 		slickTrack.finish().animate({
 			left: '+=300px'
-		}, 500); // 500 - это продолжительность анимации в миллисекундах
+		}, 200); // 200 - это продолжительность анимации в миллисекундах
 	});
 }
 

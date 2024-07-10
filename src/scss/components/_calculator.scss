@@ -176,6 +176,10 @@
 		color: $_3;
 	}
 
+	* {
+		transition: color 0.3s ease-in;
+	}
+
 	&:active * {
 		color: $_3;
 	}
