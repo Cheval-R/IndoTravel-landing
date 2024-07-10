@@ -1,0 +1,280 @@
+.travel {
+	padding-bottom: 112px;
+
+	@media (width <=1200px) {
+		padding-bottom: 80px;
+	}
+
+	@media (width <=900px) {
+		padding-bottom: 92px;
+	}
+
+	@media (width <=620px) {
+		padding-bottom: 49px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__intro {
+		@media (width <=1200px) {
+			margin-bottom: 62px;
+		}
+
+		@media (width <=900px) {
+			margin-bottom: 40px;
+		}
+
+		@media (width <=600px) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__map {}
+}
+
+.accordion {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	// &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	width: 480px;
+	// 	height: 410px;
+
+	// 	background: {
+	// 		size: cover;
+	// 		repeat: no-repeat;
+	// 		position: center;
+	// 		image: url("./../../img/travel/map.png");
+	// 	}
+
+	// 	transform: translateY(-24px);
+	// }
+	@media (width <=900px) {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	&__wrapper {
+		max-width: 580px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 14px;
+			top: 6px;
+			bottom: 0;
+			height: calc(100% - 50px);
+			width: 2px;
+			background-color: $_3;
+
+			@media (width <=600px) {
+				left: 7px;
+				height: calc(100% - 48px);
+			}
+		}
+	}
+
+
+
+
+
+	// &__button {
+	// 	width: 18px;
+	// 	height: 18px;
+	// 	border-radius: 50%;
+	// 	background-color: $_3;
+	// 	margin-left: 6px;
+	// 	margin-right: 76px;
+
+
+	// 	&--active {
+	// 		width: 30px;
+	// 		height: 30px;
+	// 		margin-left: 0px;
+	// 	margin-right: 70px;
+
+	// 	}
+	// }
+
+
+
+	&__text {
+		font-size: 18px;
+		max-width: 553px;
+		line-height: 1.5;
+		font-weight: 300;
+		transform: translateX(5px);
+		margin-bottom: 64px;
+		padding-left: 95px;
+		letter-spacing: -0.029rem;
+
+		@media (width <=1200px) {
+			box-sizing: content-box;
+			width: 440px;
+			margin-bottom: 37px;
+		}
+
+		@media (width <=900px) {
+			letter-spacing: -0.022rem;
+			font-size: 14px;
+			width: 519px;
+			margin-bottom: 40px;
+		}
+
+		@media (width <=600px) {
+			font-size: 12px;
+			padding-left: 25px;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.accordion__item:last-child .accordion__title {
+	@media (width <=900px) {
+		margin-bottom: 27px;
+	}
+
+	@media (width <=600px) {}
+}
+
+.accordion__title {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 700;
+	letter-spacing: -0.028rem;
+	margin-bottom: 38px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+
+
+
+	span:last-child {
+		min-width: 409px;
+
+		@media (width <=600px) {
+			min-width: unset;
+		}
+	}
+
+	@media (hover:hover) {
+		&:hover {
+			color: $_3;
+		}
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+
+	&:focus-visible span {
+		outline: 2px solid $_3;
+	}
+
+	&:active {
+		color: #D09600;
+	}
+
+	@media(width <=900px) {
+		font-size: 16px;
+		margin-bottom: 44px;
+	}
+
+	@media(width <=600px) {
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+}
+
+.acc-icon {
+	transition: scale 0.3s ease-in;
+	z-index: 2;
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: $_3;
+	margin-left: 6px;
+	margin-right: 76px;
+
+	@media (width <=600px) {
+		margin-left: 3px;
+		margin-right: 14px;
+		width: 11px;
+		height: 11px;
+		min-height: 11px;
+		min-width: 11px;
+		max-height: 11px;
+		max-width: 11px;
+	}
+}
+
+.ui-accordion-header-active {
+
+	margin-bottom: 18px;
+
+	@media(width <=900px) {
+		margin-bottom: 19px;
+	}
+
+	@media(width <=600px) {
+		align-items: flex-start;
+		margin-bottom: 15px;
+	}
+}
+
+.acc-icon-active {
+	width: 30px;
+	height: 30px;
+	margin-left: 0;
+	margin-right: 70px;
+
+	@media (width <=600px) {
+		width: 16px;
+		height: 16px;
+		min-width: 16px;
+		min-height: 16px;
+		max-width: 16px;
+		max-height: 16px;
+		margin-right: 13px;
+	}
+}
+
+
+
+.map {
+	width: 480px;
+	height: 410px;
+	transform: translateY(-24px);
+
+	svg>* {
+		transition: fill 0.3s ease-in;
+	}
+
+	@media (width <=1200px) {
+		width: clamp(319px, 31vw, 480px);
+		height: clamp(268px, 26vw, 410px);
+		transform: translateY(-25px);
+	}
+
+	@media (width <=900px) {
+		align-self: center;
+		width: 380px;
+		transform: translateY(0);
+		height: 320px;
+	}
+
+	@media (width <=600px) {
+		width: 270px;
+		height: 235px;
+	}
+}
