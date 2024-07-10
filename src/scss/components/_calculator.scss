@@ -72,19 +72,21 @@
 	background: rgba(230, 205, 173, 0.3);
 
 	@media (width <=1200px) {
-		padding: 53px 60px 50px;
+		padding: 53px 60px 51px;
 	}
 
 	@media (width <=900px) {
+		max-width: 300px;
 		border-radius: 12px 12px 0px 0px;
 		padding: 30px;
 		margin-top: -40px;
 	}
 
 	@media (width <=620px) {
-		max-width: fit-content;
+		max-width: 250px;
+		// max-width: fit-content;
 		align-self: center;
-		padding: 25px 25px 24px;
+		padding: 23px 23px 24px 27px;
 	}
 }
 
@@ -98,9 +100,18 @@
 	gap: 39px;
 
 	@media (width <=1200px) {
-		gap: 5px;
+		gap: 0px;
 		padding: 23px 20px 20px 19px;
-		justify-content: space-between;
+		border-radius: 16px;
+		// justify-content: space-between;
+
+		&> :not(:last-child) {
+			margin-right: 5px;
+		}
+
+		&> :nth-child(3) {
+			margin-right: 24px;
+		}
 	}
 
 	@media (width <=900px) {
@@ -111,7 +122,7 @@
 	}
 
 	@media (width <=620px) {
-		padding: 15px 25px 26px;
+		padding: 17px 25px 26px;
 		gap: 0;
 	}
 }
@@ -150,10 +161,11 @@
 	}
 
 
-
-	&:hover .select__arrow {
-		background-color: #fff;
-		color: $_3;
+	@media (hover:hover) {
+		&:hover .select__arrow {
+			background-color: #fff;
+			color: $_3;
+		}
 	}
 
 	&:focus-visible {
@@ -253,10 +265,11 @@
 	width: 219px;
 	font-size: 18px;
 	height: 67px;
+	transform: translate(-3px, 6px);
 
 	@media (width <=1200px) {
 		width: 189px;
-
+		transform: translate(0, 0);
 		padding: 9px 0 28px;
 		height: 53px;
 		align-self: center;
@@ -318,6 +331,8 @@
 .popup__wrapper {
 	display: flex;
 	align-items: center;
+
+
 }
 
 .popup__month-list {
@@ -341,8 +356,10 @@
 
 	transition: color 0.3s ease-in, outline-color 0.3s ease-in;
 
-	&:hover {
-		color: $_3;
+	@media (hover:hover) {
+		&:hover {
+			color: $_3;
+		}
 	}
 
 	&:focus-visible {
@@ -377,8 +394,15 @@
 	transition: color 0.3s ease-in, ;
 
 
-	&:hover,
-	s &:focus-visible {
+	@media (hover:hover) {
+		&:hover {
+			outline: none;
+			font-size: 16px;
+		}
+	}
+
+
+	&:focus-visible {
 		outline: none;
 		font-size: 16px;
 	}
@@ -416,8 +440,14 @@
 	line-height: 130%;
 	cursor: pointer;
 
+	@media (hover:hover) {
 
-	&:hover,
+		&:hover {
+			outline: none;
+			font-size: 16px;
+		}
+	}
+
 	&:focus-visible {
 		outline: none;
 		font-size: 16px;
@@ -464,8 +494,10 @@
 	}
 
 
-	&:hover::before {
-		border-color: $_3;
+	@media (hover:hover) {
+		&:hover::before {
+			border-color: $_3;
+		}
 	}
 
 	&:focus-visible {

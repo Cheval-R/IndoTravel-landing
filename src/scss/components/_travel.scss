@@ -107,6 +107,7 @@
 
 	&__text {
 		font-size: 18px;
+		max-width: 553px;
 		line-height: 1.5;
 		font-weight: 300;
 		transform: translateX(5px);
@@ -121,8 +122,9 @@
 		}
 
 		@media (width <=900px) {
+			letter-spacing: -0.022rem;
 			font-size: 14px;
-			width: auto;
+			width: 519px;
 			margin-bottom: 40px;
 		}
 
