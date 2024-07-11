@@ -186,7 +186,7 @@ optionsBtn.on('click', function () {
 	optionsList.children('.popup__options-item--checked').each(function () {
 		if (selectedOptions) {
 			selectedOptions = selectedOptions + ', ' + $(this).text().toLowerCase()
-			console.log(selectedOptions);
+			// console.log(selectedOptions);
 		}
 		else selectedOptions = $(this).text();
 	});

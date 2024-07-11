@@ -5,11 +5,15 @@
 .section__title--album {
 	margin-bottom: 60px;
 
+	@media (width <=1200px) {
+		margin-bottom: 60px;
+	}
+
 	@media (width <=900px) {
 		margin-bottom: 30px;
 	}
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		margin-bottom: 15px;
 	}
 }
@@ -40,7 +44,7 @@
 
 }
 
-.slider__wrapper {
+.slider-wrapper {
 	position: relative;
 }
 
@@ -63,7 +67,7 @@
 
 	cursor: auto;
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		width: 72px;
 	}
 }
@@ -81,7 +85,7 @@
 	transition: background-color 0.3s ease-in, opacity 0.3s ease-in;
 	cursor: pointer;
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		width: 34px;
 		height: 34px;
 		top: calc(50% - 17px);
@@ -92,7 +96,7 @@
 	right: 0;
 	opacity: 0;
 
-	@media (width <=12000px) {
+	@media (width <=1200px) {
 		right: 90px;
 	}
 
@@ -100,7 +104,7 @@
 		right: 96px;
 	}
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		right: 13px;
 	}
 }
@@ -110,7 +114,7 @@
 	opacity: 1;
 
 
-	@media (width <=12000px) {
+	@media (width <=1200px) {
 		left: 90px;
 	}
 
@@ -118,7 +122,7 @@
 		left: 96px;
 	}
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		left: 13px;
 	}
 
@@ -167,6 +171,11 @@
 
 
 
+.prev:focus,
+.next:focus {
+	outline: none;
+}
+
 .prev:focus-visible svg,
 .next:focus-visible svg {
 	background-color: rgba(249, 249, 249, 0.3);
@@ -195,7 +204,7 @@
 		max-width: 768px;
 	}
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		max-width: 320px;
 	}
 }

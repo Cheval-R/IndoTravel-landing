@@ -48,36 +48,54 @@ const slickTrack = $('.slick-track');
 
 
 function sliderMove() {
-	prevSection.on('mouseenter', function () {
-		slickTrack.finish().animate({
-			left: '+=300px'
-		}, 200); // 200 - это продолжительность анимации в миллисекундах
-	});
+	// Получаем ширину экрана
+	var windowWidth = $(window).width();
 
-	prevSection.on('mouseleave', function () {
-		slickTrack.finish().animate({
-			left: '-=300px'
-		}, 200); // 200 - это продолжительность анимации в миллисекундах
-	});
-	nextSection.on('mouseenter', function () {
-		slickTrack.finish().animate({
-			left: '-=300px'
-		}, 200); // 200 - это продолжительность анимации в миллисекундах
-	});
+	// Проверяем, если ширина экрана больше или равна 900px
+	if (windowWidth >= 900) {
+		prevSection.on('mouseenter', function () {
+			slickTrack.finish().animate({
+				left: '+=300px'
+			}, 200);
+		});
 
-	nextSection.on('mouseleave', function () {
-		slickTrack.finish().animate({
-			left: '+=300px'
-		}, 200); // 200 - это продолжительность анимации в миллисекундах
-	});
+		prevSection.on('mouseleave', function () {
+			slickTrack.finish().animate({
+				left: '-=300px'
+			}, 200);
+		});
+
+		nextSection.on('mouseenter', function () {
+			slickTrack.finish().animate({
+				left: '-=300px'
+			}, 200);
+		});
+
+		nextSection.on('mouseleave', function () {
+			slickTrack.finish().animate({
+				left: '+=300px'
+			}, 200);
+		});
+	} else {
+		// Если ширина экрана меньше 900px, убираем обработчики событий
+		prevSection.off('mouseenter').off('mouseleave');
+		nextSection.off('mouseenter').off('mouseleave');
+	}
 }
 
+// Вызываем функцию при загрузке страницы, если ширина экрана >= 900px
 if (document.documentElement.clientWidth >= 900) {
 	sliderMove();
 }
 
+// Добавляем обработчик события resize для проверки ширины экрана
 $(window).resize(function () {
+	// Проверяем ширину экрана при изменении размера окна
 	if (document.documentElement.clientWidth >= 900) {
 		sliderMove();
+	} else {
+		// Если ширина стала меньше 900px, убираем обработчики событий
+		prevSection.off('mouseenter').off('mouseleave');
+		nextSection.off('mouseenter').off('mouseleave');
 	}
 });

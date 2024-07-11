@@ -23,8 +23,6 @@ const sumathra = $('.sumathra')
 
 
 accHeader.on('click', function (event) {
-	// console.log(event.currentTarget);
-
 	if ($(this).hasClass('accordion__title--yava')) {
 		if ($(this).attr('aria-expanded') === "true") {
 			yava.css('fill', '#FCB500');

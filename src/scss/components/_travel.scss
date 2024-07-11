@@ -9,7 +9,7 @@
 		padding-bottom: 92px;
 	}
 
-	@media (width <=620px) {
+	@media (width <=670px) {
 		padding-bottom: 49px;
 	}
 
@@ -27,7 +27,7 @@
 			margin-bottom: 40px;
 		}
 
-		@media (width <=600px) {
+		@media (width <=670px) {
 			margin-bottom: 24px;
 		}
 	}
@@ -64,6 +64,7 @@
 		max-width: 580px;
 		position: relative;
 
+
 		&::before {
 			content: '';
 			position: absolute;
@@ -74,7 +75,7 @@
 			width: 2px;
 			background-color: $_3;
 
-			@media (width <=600px) {
+			@media (width <=670px) {
 				left: 7px;
 				height: calc(100% - 48px);
 			}
@@ -124,11 +125,12 @@
 		@media (width <=900px) {
 			letter-spacing: -0.022rem;
 			font-size: 14px;
-			width: 519px;
+			width: clamp(440px, 67.57vw, 519px);
 			margin-bottom: 40px;
 		}
 
-		@media (width <=600px) {
+		@media (width <=670px) {
+			width: 230px;
 			font-size: 12px;
 			padding-left: 25px;
 			margin-bottom: 25px;
@@ -141,7 +143,7 @@
 		margin-bottom: 27px;
 	}
 
-	@media (width <=600px) {}
+	@media (width <=670px) {}
 }
 
 .accordion__title {
@@ -160,7 +162,7 @@
 	span:last-child {
 		min-width: 409px;
 
-		@media (width <=600px) {
+		@media (width <=670px) {
 			min-width: unset;
 		}
 	}
@@ -188,7 +190,7 @@
 		margin-bottom: 44px;
 	}
 
-	@media(width <=600px) {
+	@media(width <=670px) {
 		font-size: 14px;
 		margin-bottom: 25px;
 	}
@@ -206,7 +208,7 @@
 	margin-left: 6px;
 	margin-right: 76px;
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		margin-left: 3px;
 		margin-right: 14px;
 		width: 11px;
@@ -226,7 +228,7 @@
 		margin-bottom: 19px;
 	}
 
-	@media(width <=600px) {
+	@media(width <=670px) {
 		align-items: flex-start;
 		margin-bottom: 15px;
 	}
@@ -238,7 +240,7 @@
 	margin-left: 0;
 	margin-right: 70px;
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		width: 16px;
 		height: 16px;
 		min-width: 16px;
@@ -273,7 +275,7 @@
 		height: 320px;
 	}
 
-	@media (width <=600px) {
+	@media (width <=670px) {
 		width: 270px;
 		height: 235px;
 	}

@@ -84,7 +84,7 @@ dateBtn.on('click', function (event) {
 	if (selectedDays !== undefined && selectedDays !== null) {
 		formDatePlaceholder.text(selectedDays);
 		dateInput.val(selectedDays);
-		console.log('dateInput.val(): ' + dateInput.val());
+		// console.log('dateInput.val(): ' + dateInput.val());
 		$('.select--date').css({
 			'outline': "none"
 		})
@@ -128,7 +128,7 @@ function translateDateRange(dateRange) {
 
 	// Разбиваем входной диапазон дат на отдельные даты
 	const dates = dateRange.split(' - ');
-	console.log(dates);
+	// console.log(dates);
 
 	// Функция для перевода одной даты
 	function translateDate(date) {
@@ -164,9 +164,9 @@ $('.popup__people-list').on('click', '.popup__people-item--form', function (even
 	}
 	peopleResult = selectedNumber + " " + people;
 	formPeoplePlaceholder.text(peopleResult);
-	console.log('selectedNumber: ' + selectedNumber);
+	// console.log('selectedNumber: ' + selectedNumber);
 	peopleInput.val(selectedNumber);
-	console.log('peopleInput.val(): ' + peopleInput.val());
+	// console.log('peopleInput.val(): ' + peopleInput.val());
 	$('.select--people').css({
 		'outline': "none"
 	})
@@ -187,7 +187,7 @@ $(document).click(function (event) {
 // * Options
 
 const formOptionsWrapper = $('#form-select-options');
-console.log(formOptionsWrapper);
+// console.log(formOptionsWrapper);
 const formOptionsPopup = $('#form-popup-options');
 formOptionsPopup.slideUp();
 
@@ -221,7 +221,7 @@ formOptionsBtn.on('click', function () {
 		// console.log(selectedOptions);
 		formOptionsPlaceholder.text(selectedOptions);
 		optionsInput.val(selectedOptions);
-		console.log('optionsInput.val(): ' + optionsInput.val());
+		// console.log('optionsInput.val(): ' + optionsInput.val());
 		$('.select--options').css({
 			'outline': "none"
 		})
@@ -230,7 +230,7 @@ formOptionsBtn.on('click', function () {
 	else {
 		formOptionsPlaceholder.text('Выбери нужные опции');
 		optionsInput.val('');
-		console.log('optionsInput.val(): ' + optionsInput.val());
+		// console.log('optionsInput.val(): ' + optionsInput.val());
 
 		formOptionsPopup.slideToggle(300);
 	}
@@ -328,7 +328,7 @@ validator
 	)
 	.onSuccess(event => {
 		event.preventDefault(); // Prevent the default form submission
-		console.log(event);
+		// console.log(event);
 		const target = event.target;
 		const formData = {
 			date: dateInput.val(),
@@ -389,7 +389,7 @@ footerValidator
 	])
 	.onSuccess(event => {
 		event.preventDefault(); // Prevent the default form submission
-		console.log(event);
+		// console.log(event);
 		const formData = {
 			email: $('#footer-email').val(),
 		};

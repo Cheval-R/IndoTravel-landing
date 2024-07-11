@@ -124,7 +124,7 @@
 			gap: 15px;
 		}
 
-		>img {
+		picture {
 			height: 100%;
 			transform: translateY(125px);
 
@@ -140,7 +140,7 @@
 		}
 
 		@media (width <=670px) {
-			img {
+			picture {
 				display: none;
 			}
 		}
@@ -180,12 +180,12 @@
 			display: none;
 		}
 
-		& img:last-child {
+		& picture:last-child {
 			align-self: flex-end;
 
 			@media(width <=1200px) {
-				max-height: 208px;
-				width: auto;
+				img{max-height: 208px;
+					width: auto;}
 			}
 		}
 	}

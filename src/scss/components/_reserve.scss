@@ -1,7 +1,7 @@
 .reserve {
 	padding: 150px 0 146px;
 
-	@media (width <=1100px) {
+	@media (width <=1200px) {
 		padding: 120px 0;
 	}
 
@@ -17,7 +17,7 @@
 .container--reserve {
 	max-width: 980px;
 
-	@media (width <=1100px) {
+	@media (width <=1200px) {
 		max-width: 940px;
 	}
 
@@ -35,7 +35,7 @@
 	border: 1px solid $_4;
 	padding: 60px 100px;
 
-	@media (width <=1100px) {
+	@media (width <=1200px) {
 		padding: 60px 80px 68px
 	}
 
@@ -58,7 +58,7 @@
 	text-align: center;
 	margin-bottom: 60px;
 
-	@media (width <=1100px) {
+	@media (width <=1200px) {
 		font-size: 31px;
 		margin-bottom: 57px;
 	}
@@ -118,7 +118,8 @@
 	display: flex;
 	gap: 58px;
 
-	@media(width <=1100px) {
+
+	@media(width <=1200px) {
 		&> :nth-child(2) {
 			padding: 12px 17px 12px 9px;
 		}
@@ -132,6 +133,20 @@
 		flex-direction: column;
 		padding: 0 45px;
 		gap: 15px;
+
+		.select--options .select__title {
+			transform: translate(1px, -6px);
+		}
+
+		.select--options .select__arrow {
+			right: -9px;
+			top: 0px;
+		}
+
+		.select--options .select__title {
+			transform: translate(1px, -6px);
+		}
+
 	}
 
 	.select-wrapper {
@@ -140,7 +155,7 @@
 		padding: 12px 17px 12px 15px;
 		flex-basis: 221px;
 
-		@media(width <=1100px) {
+		@media(width <=1200px) {
 			padding: 12px 17px 12px 13px;
 
 			&:nth-child(2) {
@@ -229,7 +244,7 @@
 
 	@media (width <=670px) {
 		font-size: 12px;
-		top: 10px;
+		top: 6px;
 		left: 9px;
 	}
 }
@@ -239,6 +254,11 @@
 
 	@media (width <=900px) {
 		left: 20px;
+	}
+
+	@media (width <=670px) {
+		top: 9px;
+		left: 8px;
 	}
 }
 
@@ -306,7 +326,7 @@
 
 	@media (width <=670px) {
 		flex-direction: column;
-		gap: 15px;
+		gap: 11px;
 	}
 }
 
@@ -368,7 +388,7 @@
 	flex-basis: calc(50% - 30px);
 	padding: 24px 100px 25px 111px;
 
-	@media (width <=1100px) {
+	@media (width <=1200px) {
 		max-width: 298px;
 		padding: 18px 81px 18px 81px;
 		height: 63px;
