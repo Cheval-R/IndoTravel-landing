@@ -361,3 +361,14 @@ export const base = gulp.parallel(html, scss, js, img, svg, webp, avif, copy);
 export const build = gulp.series(clear, base, critCSS, server);
 
 export default gulp.series(develop, base, server);
+
+var gulp   = require('gulp');
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+	return gulp.src("./dist/**/*")
+		.pipe(deploy({ 
+			remoteUrl: "https://github.com/Cheval-R/IndoTravel-landing",
+			branch: "dev"
+		}))
+});
