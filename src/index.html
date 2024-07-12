@@ -17,8 +17,21 @@
 			createLink('css/index.min.css');
 		})
 	</script>
+	<!-- <link href="css/index.min.css" rel="stylesheet"> -->
 	<script defer src="./js/index.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<link rel="preload" href="./img/about/img-1.avif" as="image" type="image/avif">
+	<link rel="preload" href="./img/about/img-1.webp" as="image" type="image/webp">
+	<link rel="preload" href="./img/about/img-1.jpg" as="image" type="image/jpeg">
+
+	<link rel="preload" fetchpriority="high" as="image" href="./img/header/header-banner.avif">
+	<link rel="preload" fetchpriority="high" as="image" href="./img/about/slider/slide-1.avif">
+	<link rel="preload" fetchpriority="high" as="image" href="./img/about/slider/slide-2.avif">
+	<link rel="preload" fetchpriority="high" as="image" href="./img/about/slider/slide-3.avif">
+	<link rel="preload" fetchpriority="high" as="image" href="./img/about/slider/slide-4.avif">
+	<link rel="preload" fetchpriority="high" as="image" href="./img/about/slider/slide-5.avif">
+
+	<!-- <link rel="preload" fetchpriority="high" as="image" href="./img/holder.webp" type="image/webp"> -->
+
 </head>
 
 <body>
@@ -26,7 +39,7 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="header__menu">
-					<img class="logo" src="./img/logo.svg" alt="Логотип компании IndoTravel" width="173" height="32">
+					<img class="logo" src="./img/logo.svg" alt="Логотип компании IndoTravel" width="173" height="32" loading="lazy" decoding="async" style="content-visibility: auto">
 					<button class="burger" id="burger">
 						<svg width="35" height="16" viewBox="0 0 35 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<rect width="35" height="2" rx="1" />
@@ -83,57 +96,58 @@
 							<h2 class="section__title about__title">Индонезия</h2>
 							<p class="section__intro about__intro">Незабываемая, чистая красота островов восхищает своей нетронутой природой и&nbsp;культурными традициями.</p>
 							<p class="about__text about__text--first">Величественная Индонезия&nbsp;&mdash; квинтэссенция экзотики: первозданная природа Бали и пляжи с&nbsp;черным песком острова Суматра, дворцы и&nbsp;батик Явы и&nbsp;дождевые леса Калимантана.</p>
-						</div>
-						<div class="slider">
-							<div class="slider__item">
-								<picture>
-									<source srcset="./img/about/slider/slide-1.avif" type="image/avif">
-									<source srcset="./img/about/slider/slide-1.webp" type="image/webp">
-									<img src="./img/about/slider/slide-1.jpg" alt="Лес Индонезии с пальмами на переднем плане" width="320" height="208">
-								</picture>
+							<div class="slider">
+								<div class="slider__item">
+									<picture>
+										<source srcset="./img/about/slider/slide-1.avif" type="image/avif">
+										<source srcset="./img/about/slider/slide-1.webp" type="image/webp">
+										<img src="./img/about/slider/slide-1.jpg" alt="Лес Индонезии с пальмами на переднем плане" width="320" height="208" loading="lazy" decoding="async" style="content-visibility: auto;">
+									</picture>
+								</div>
+								<div class="slider__item">
+									<picture>
+										<source srcset="./img/about/slider/slide-2.avif" type="image/avif">
+										<source srcset="./img/about/slider/slide-2.webp" type="image/webp">
+										<img src="./img/about/slider/slide-2.jpg" alt="Панорама сверху на лес Индонезии" width="320" height="208" loading="lazy" decoding="async" style="content-visibility: auto;  ">
+									</picture>
+								</div>
+								<div class="slider__item">
+									<picture>
+										<source srcset="./img/about/slider/slide-3.avif" type="image/avif">
+										<source srcset="./img/about/slider/slide-3.webp" type="image/webp">
+										<img src="./img/about/slider/slide-3.jpg" alt="Маленькая мартышка сидящая на полу" width="320" height="208" loading="lazy" decoding="async" style="content-visibility: auto;  ">
+									</picture>
+								</div>
+								<div class="slider__item">
+									<picture>
+										<source srcset="./img/about/slider/slide-4.avif" type="image/avif">
+										<source srcset="./img/about/slider/slide-4.webp" type="image/webp">
+										<img src="./img/about/slider/slide-4.jpg" alt="Берег Индонезии с маленькими беседками" width="320" height="208" loading="lazy" decoding="async" style="content-visibility: auto;">
+									</picture>
+								</div>
+								<div class="slider__item">
+									<picture>
+										<source srcset="./img/about/slider/slide-5.avif" type="image/avif">
+										<source srcset="./img/about/slider/slide-5.webp" type="image/webp">
+										<img src="./img/about/slider/slide-5.jpg" alt="Индонезийский холм" width="320" height="208" loading="lazy" decoding="async" style="content-visibility: auto;  ">
+									</picture>
+								</div>
 							</div>
-							<div class="slider__item">
-								<picture>
-									<source srcset="./img/about/slider/slide-2.avif" type="image/avif">
-									<source srcset="./img/about/slider/slide-2.webp" type="image/webp">
-									<img src="./img/about/slider/slide-2.jpg" alt="Панорама сверху на лес Индонезии" width="320" height="208">
-								</picture>
-							</div>
-							<div class="slider__item">
-								<picture>
-									<source srcset="./img/about/slider/slide-3.avif" type="image/avif">
-									<source srcset="./img/about/slider/slide-3.webp" type="image/webp">
-									<img src="./img/about/slider/slide-3.jpg" alt="Маленькая мартышка сидящая на полу" width="320" height="208">
-								</picture>
-							</div>
-							<div class="slider__item">
-								<picture>
-									<source srcset="./img/about/slider/slide-4.avif" type="image/avif">
-									<source srcset="./img/about/slider/slide-4.webp" type="image/webp">
-									<img src="./img/about/slider/slide-4.jpg" alt="Берег Индонезии с маленькими беседками" width="320" height="208">
-								</picture>
-							</div>
-							<div class="slider__item">
-								<picture>
-									<source srcset="./img/about/slider/slide-5.avif" type="image/avif">
-									<source srcset="./img/about/slider/slide-5.webp" type="image/webp">
-									<img src="./img/about/slider/slide-5.jpg" alt="Индонезийский холм" width="320" height="208">
-								</picture>
-							</div>
+							<p class="about__text about__text--second"> Индонезия расположилась на легендарных и&nbsp;известных своей довольно непохожей историей островах Юго-Восточной Азии – на&nbsp;Суматре, Яве, Сулавеси, Бали, отчасти на&nbsp;Борнео и на Новой Гвинее, а также на&nbsp;множестве более мелких островов Малайского архипелага.</p>
 						</div>
 						<div class="about__bot">
 							<div class="about__left-col">
-								<picture>
+								<picture >
 									<source srcset="./img/about/img-1.avif" type="image/avif">
 									<source srcset="./img/about/img-1.webp" type="image/webp">
-									<img src="./img/about/img-1.jpg" alt="Лес Индонезии с пальмами на переднем плане" width="480" height="312">
+									<img src="./img/about/img-1.jpg" alt="Лес Индонезии с пальмами на переднем плане" width="480" height="312" loading="eager" fetchpriority="high" decoding="async" style="content-visibility: auto; background-color: aquamarine; ">
 								</picture>
 								<p class="about__text about__text--second"> Индонезия расположилась на легендарных и&nbsp;известных своей довольно непохожей историей островах Юго-Восточной Азии – на&nbsp;Суматре, Яве, Сулавеси, Бали, отчасти на&nbsp;Борнео и на Новой Гвинее, а также на&nbsp;множестве более мелких островов Малайского архипелага.</p>
 							</div>
 							<picture>
 								<source srcset="./img/about/img-2.avif" type="image/avif">
 								<source srcset="./img/about/img-2.webp" type="image/webp">
-								<img src="./img/about/img-2.jpg" alt="Маленькая мартышка сидящая на полу" width="280" height="377">
+								<img src="./img/about/img-2.jpg" alt="Маленькая мартышка сидящая на полу" width="280" height="377" loading="lazy">
 							</picture>
 						</div>
 					</div>
@@ -141,19 +155,19 @@
 						<picture>
 							<source srcset="./img/about/img-3.avif" type="image/avif">
 							<source srcset="./img/about/img-3.webp" type="image/webp">
-							<img src="./img/about/img-3.jpg" alt="Панорама сверху на лес Индонезии" width="380" height="700">
+							<img src="./img/about/img-3.jpg" alt="Панорама сверху на лес Индонезии" width="380" height="700" loading="lazy">
 						</picture>
 
 						<picture>
 							<source srcset="./img/about/img-4.avif" type="image/avif">
 							<source srcset="./img/about/img-4.webp" type="image/webp">
-							<img src="./img/about/img-4.jpg" alt="Берег Индонезии с маленькими беседками" width="380" height="507">
+							<img src="./img/about/img-4.jpg" alt="Берег Индонезии с маленькими беседками" width="380" height="507" loading="lazy">
 						</picture>
 
 						<picture>
 							<source srcset="./img/about/img-5.avif" type="image/avif">
 							<source srcset="./img/about/img-5.webp" type="image/webp">
-							<img src="./img/about/img-5.jpg" alt="Индонезийский холм" width="280" height="264">
+							<img src="./img/about/img-5.jpg" alt="Индонезийский холм" width="280" height="264" loading="lazy">
 						</picture>
 					</div>
 				</div>
@@ -393,42 +407,42 @@
 						<picture>
 							<source srcset="./img/album/img-6.avif" type="image/avif">
 							<source srcset="./img/album/img-6.webp" type="image/webp">
-							<img src="./img/album/img-6.jpg" alt="Скалистый остров с замком">
+							<img src="./img/album/img-6.jpg" alt="Скалистый остров с замком" loading="lazy" width="1110" height="500" decoding="async" style="content-visibility: auto">
 						</picture>
 					</div>
 					<div class="album__item">
 						<picture>
 							<source srcset="./img/album/img-1.avif 1x" type="image/avif">
 							<source srcset="./img/album/img-1.webp 1x" type="image/webp">
-							<img src="./img/album/img-1.jpg" alt="Индонезийские горы">
-						</picture>	
+							<img src="./img/album/img-1.jpg" alt="Индонезийские горы" width="1110" height="500" loading="lazy" decoding="async" style="content-visibility: auto">
+						</picture>
 					</div>
 					<div class="album__item">
 						<picture>
 							<source srcset="./img/album/img-2.avif" type="image/avif">
 							<source srcset="./img/album/img-2.webp" type="image/webp">
-							<img src="./img/album/img-2.jpg" alt="Лодка посреди озера">
+							<img src="./img/album/img-2.jpg" alt="Лодка посреди озера" width="1110" height="500" loading="lazy" decoding="async" style="content-visibility: auto">
 						</picture>
 					</div>
 					<div class="album__item">
 						<picture>
 							<source srcset="./img/album/img-3.avif" type="image/avif">
 							<source srcset="./img/album/img-3.webp" type="image/webp">
-							<img src="./img/album/img-3.jpg" alt="красивый закат на пляже с птицами, летящими над водой">
+							<img src="./img/album/img-3.jpg" alt="красивый закат на пляже с птицами, летящими над водой" width="1110" height="500" loading="lazy" decoding="async" style="content-visibility: auto">
 						</picture>
 					</div>
 					<div class="album__item">
 						<picture>
 							<source srcset="./img/album/img-4.avif" type="image/avif">
 							<source srcset="./img/album/img-4.webp" type="image/webp">
-							<img src="./img/album/img-4.jpg" alt="пляж с волнами, разбивающимися о скалы">
+							<img src="./img/album/img-4.jpg" alt="пляж с волнами, разбивающимися о скалы" width="1110" height="500" loading="lazy" decoding="async" style="content-visibility: auto">
 						</picture>
 					</div>
 					<div class="album__item">
 						<picture>
 							<source srcset="./img/album/img-5.avif" type="image/avif">
 							<source srcset="./img/album/img-5.webp" type="image/webp">
-							<img src="./img/album/img-5.jpg" alt="Тропический остров с пальмами и хижиной посреди океана">
+							<img src="./img/album/img-5.jpg" alt="Тропический остров с пальмами и хижиной посреди океана" width="1110" height="500" loading="lazy" decoding="async" style="content-visibility: auto">
 						</picture>
 					</div>
 				</div>
@@ -554,7 +568,7 @@
 		<div class="container">
 			<div class="footer__wrapper">
 				<div class="footer__col">
-					<img class="logo" src="./img/logo.svg" alt="Логотип компании IndoTravel" width="173" height="32">
+					<img class="logo" src="./img/logo.svg" alt="Логотип компании IndoTravel" width="173" height="32" loading="lazy" decoding="async" style="content-visibility: auto">
 					<p class="footer__copyright">
 						&copy;&nbsp;Indo Travel, 2022
 					</p>

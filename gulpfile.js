@@ -60,10 +60,10 @@ const path = {
 			'src/libs/slick.min.js',
 			'src/libs/just-validate.production.min.js',
 			'src/libs/inputmask.min.js',
+			'src/js/a_slider.js',
 			'src/js/accordion.js',
 			'src/js/burger.js',
 			'src/js/calculator.js',
-			'src/js/slider.js',
 			'src/js/reserve.js',
 		],
 		img: 'src/img/**/*.*',
@@ -201,6 +201,9 @@ export const js = () =>
 		.pipe(
 			rename({
 				suffix: '.min',
+			}),
+			deleteSync(['dist/js/index.js'], {
+				force: true,
 			}),
 		)
 		.pipe(gulp.dest(path.dist.js))
