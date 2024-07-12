@@ -560,8 +560,8 @@ iframe {
 }
 
 .header {
-  background-image: -webkit-image-set(url("./../../img/header/header-banner.avif") 1x type("image/avif"), url("./../../img/header/header-banner.webp") 1x type("image/webp"), url("./../../img/header/header-banner.jpg"));
-  background-image: image-set(url("./../../img/header/header-banner.avif") 1x type("image/avif"), url("./../../img/header/header-banner.webp") 1x type("image/webp"), url("./../../img/header/header-banner.jpg"));
+  background-image: -webkit-image-set(url("/img/header/header-banner.avif") 1x type("image/avif"), url("/img/header/header-banner.webp") 1x type("image/webp"), url("/img/header/header-banner.jpg"));
+  background-image: image-set(url("/img/header/header-banner.avif") 1x type("image/avif"), url("/img/header/header-banner.webp") 1x type("image/webp"), url("/img/header/header-banner.jpg"));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
