@@ -39,14 +39,14 @@ import svgSprite from 'gulp-svg-sprite';
 let dev = false;
 
 const path = {
-	dist: {
-		base: 'dist/',
-		html: 'dist/',
-		js: 'dist/js/',
-		css: 'dist/css/',
-		cssIndex: 'dist/css/index.min.css',
-		img: 'dist/img/',
-		fonts: 'dist/fonts/',
+	docs: {
+		base: 'docs/',
+		html: 'docs/',
+		js: 'docs/js/',
+		css: 'docs/css/',
+		cssIndex: 'docs/css/index.min.css',
+		img: 'docs/img/',
+		fonts: 'docs/fonts/',
 	},
 	src: {
 		base: 'src/',
@@ -101,7 +101,7 @@ export const html = () =>
 				}),
 			),
 		)
-		.pipe(gulp.dest(path.dist.html))
+		.pipe(gulp.dest(path.docs.html))
 		.pipe(browserSync.stream());
 
 //pug
@@ -116,7 +116,7 @@ export const pug = () =>
 				this.emit('end');
 			}),
 		)
-		.pipe(gulpif(!dev, gulp.dest(path.dist.html)))
+		.pipe(gulpif(!dev, gulp.dest(path.docs.html)))
 		.pipe(
 			gulpif(
 				dev,
@@ -127,7 +127,7 @@ export const pug = () =>
 				}),
 			),
 		)
-		.pipe(gulp.dest(path.dist.html))
+		.pipe(gulp.dest(path.docs.html))
 		.pipe(browserSync.stream());
 
 // css
@@ -147,7 +147,7 @@ export const scss = () =>
 			),
 		)
 		.pipe(gulpif(!dev, gcmq()))
-		.pipe(gulpif(!dev, gulp.dest(path.dist.css)))
+		.pipe(gulpif(!dev, gulp.dest(path.docs.css)))
 		.pipe(
 			gulpif(
 				!dev,
@@ -164,7 +164,7 @@ export const scss = () =>
 			}),
 		)
 		.pipe(gulpif(dev, sourcemaps.write()))
-		.pipe(gulp.dest(path.dist.css))
+		.pipe(gulp.dest(path.docs.css))
 		.pipe(browserSync.stream());
 
 // js
@@ -196,17 +196,17 @@ export const js = () =>
 		.src(path.src.js)
 		.pipe(plumber())
 		.pipe(webpackStream(webpackConf, webpack))
-		.pipe(gulpif(!dev, gulp.dest(path.dist.js)))
+		.pipe(gulpif(!dev, gulp.dest(path.docs.js)))
 		.pipe(gulpif(!dev, terser()))
 		.pipe(
 			rename({
 				suffix: '.min',
 			}),
-			deleteSync(['dist/js/index.js'], {
+			deleteSync(['docs/js/index.js'], {
 				force: true,
 			}),
 		)
-		.pipe(gulp.dest(path.dist.js))
+		.pipe(gulp.dest(path.docs.js))
 		.pipe(browserSync.stream());
 
 export const img = () =>
@@ -239,7 +239,7 @@ export const img = () =>
 				}),
 			),
 		)
-		.pipe(gulp.dest(path.dist.img))
+		.pipe(gulp.dest(path.docs.img))
 		.pipe(
 			browserSync.stream({
 				once: true,
@@ -258,7 +258,7 @@ export const svg = () =>
 				},
 			}),
 		)
-		.pipe(gulp.dest(path.dist.img))
+		.pipe(gulp.dest(path.docs.img))
 		.pipe(
 			browserSync.stream({
 				once: true,
@@ -273,7 +273,7 @@ export const webp = () =>
 				quality: dev ? 100 : 60,
 			}),
 		)
-		.pipe(gulp.dest(path.dist.img))
+		.pipe(gulp.dest(path.docs.img))
 		.pipe(
 			browserSync.stream({
 				once: true,
@@ -288,7 +288,7 @@ export const avif = () =>
 				quality: dev ? 100 : 50,
 			}),
 		)
-		.pipe(gulp.dest(path.dist.img))
+		.pipe(gulp.dest(path.docs.img))
 		.pipe(
 			browserSync.stream({
 				once: true,
@@ -300,22 +300,22 @@ export const critCSS = () =>
 		.src(path.src.html)
 		.pipe(
 			critical({
-				base: path.dist.base,
+				base: path.docs.base,
 				inline: true,
-				css: [path.dist.cssIndex],
+				css: [path.docs.cssIndex],
 			}),
 		)
 		.on('error', (err) => {
 			console.error(err.message);
 		})
-		.pipe(gulp.dest(path.dist.base));
+		.pipe(gulp.dest(path.docs.base));
 
 export const copy = () =>
 	gulp
 		.src(path.src.assets, {
 			base: path.src.base,
 		})
-		.pipe(gulp.dest(path.dist.base))
+		.pipe(gulp.dest(path.docs.base))
 		.pipe(
 			browserSync.stream({
 				once: true,
@@ -330,7 +330,7 @@ export const server = () => {
 		port: 3001,
 		// tunnel: true,
 		server: {
-			baseDir: 'dist',
+			baseDir: 'docs',
 		},
 	});
 
@@ -345,7 +345,7 @@ export const server = () => {
 };
 
 export const clear = (done) => {
-	deleteSync([path.dist.base], {
+	deleteSync([path.docs.base], {
 		force: true,
 	});
 	done();
