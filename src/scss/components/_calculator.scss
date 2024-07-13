@@ -1,8 +1,8 @@
 .calculator {
 	background: {
-		image: image-set(url('./../../img/calculator-bg.avif') 1x type("image/avif"),
-				url('./../../img/calculator-bg.webp') 1x type("image/webp"),
-				url('./../../img/calculator-bg.jpg') 1x);
+		image: image-set(url('/IndoTravel-landing/img/calculator-bg.avif') 1x type("image/avif"),
+				url('/IndoTravel-landing/img/calculator-bg.webp') 1x type("image/webp"),
+				url('/IndoTravel-landing/img/calculator-bg.jpg') 1x);
 		repeat: no-repeat;
 		position: center;
 		size: cover;
@@ -518,7 +518,7 @@
 
 	&--checked::before {
 		background: {
-			image: url("./../../img/icons/mark-button.svg") !important;
+			image: url("/IndoTravel-landing/img/icons/mark-button.svg") !important;
 			repeat: no-repeat !important;
 			size: cover !important;
 			position: center !important;

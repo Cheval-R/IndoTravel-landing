@@ -2,9 +2,9 @@
 	padding: 80px 0;
 	color: #fff;
 	background-image:
-		image-set(url('./../../img/footer/footer-bg.avif') 1x type("image/avif"),
-			url('./../../img/footer/footer-bg.webp') 1x type("image/webp"),
-			url("./../../img/footer/footer-bg.jpg"));
+		image-set(url('/IndoTravel-landing/img/footer/footer-bg.avif') 1x type("image/avif"),
+			url('/IndoTravel-landing/img/footer/footer-bg.webp') 1x type("image/webp"),
+			url("/IndoTravel-landing/img/footer/footer-bg.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
 

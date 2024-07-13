@@ -686,7 +686,7 @@ iframe {
 .about picture {
   width: -moz-fit-content;
   width: fit-content;
-  background-image: url("./../../img/holder.webp");
+  background-image: url("/IndoTravel-landing/img/holder.webp");
   /* путь к изображению-заглушке */
   background-size: cover;
   background-position: center;
@@ -908,8 +908,8 @@ iframe {
 }
 
 .calculator {
-  background-image: -webkit-image-set(url("./../../img/calculator-bg.avif") 1x type("image/avif"), url("./../../img/calculator-bg.webp") 1x type("image/webp"), url("./../../img/calculator-bg.jpg") 1x);
-  background-image: image-set(url("./../../img/calculator-bg.avif") 1x type("image/avif"), url("./../../img/calculator-bg.webp") 1x type("image/webp"), url("./../../img/calculator-bg.jpg") 1x);
+  background-image: -webkit-image-set(url("/IndoTravel-landing/img/calculator-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg.jpg") 1x);
+  background-image: image-set(url("/IndoTravel-landing/img/calculator-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg.jpg") 1x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1182,7 +1182,7 @@ iframe {
 }
 
 .popup__options-item--checked::before {
-  background-image: url("./../../img/icons/mark-button.svg") !important;
+  background-image: url("/IndoTravel-landing/img/icons/mark-button.svg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
@@ -1218,27 +1218,27 @@ iframe {
 }
 
 .why__card:nth-child(1):before {
-  background-image: url("./../../img/why/compas.svg");
+  background-image: url("/IndoTravel-landing/img/why/compas.svg");
 }
 
 .why__card:nth-child(2):before {
-  background-image: url("./../../img/why/suitcase.svg");
+  background-image: url("/IndoTravel-landing/img/why/suitcase.svg");
 }
 
 .why__card:nth-child(3):before {
-  background-image: url("./../../img/why/shield.svg");
+  background-image: url("/IndoTravel-landing/img/why/shield.svg");
 }
 
 .why__card:nth-child(4):before {
-  background-image: url("./../../img/why/meds.svg");
+  background-image: url("/IndoTravel-landing/img/why/meds.svg");
 }
 
 .why__card:nth-child(5):before {
-  background-image: url("./../../img/why/pacifier.svg");
+  background-image: url("/IndoTravel-landing/img/why/pacifier.svg");
 }
 
 .why__card:nth-child(6):before {
-  background-image: url("./../../img/why/hot-food.svg");
+  background-image: url("/IndoTravel-landing/img/why/hot-food.svg");
 }
 
 .why__card > :not(:last-child) {
@@ -1527,8 +1527,8 @@ iframe {
 .footer {
   padding: 80px 0;
   color: #fff;
-  background-image: -webkit-image-set(url("./../../img/footer/footer-bg.avif") 1x type("image/avif"), url("./../../img/footer/footer-bg.webp") 1x type("image/webp"), url("./../../img/footer/footer-bg.jpg"));
-  background-image: image-set(url("./../../img/footer/footer-bg.avif") 1x type("image/avif"), url("./../../img/footer/footer-bg.webp") 1x type("image/webp"), url("./../../img/footer/footer-bg.jpg"));
+  background-image: -webkit-image-set(url("/IndoTravel-landing/img/footer/footer-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg.jpg"));
+  background-image: image-set(url("/IndoTravel-landing/img/footer/footer-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg.jpg"));
   background-size: cover;
   background-repeat: no-repeat;
 }
