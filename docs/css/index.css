@@ -1,0 +1,3143 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Merriweather-400.woff2") format("woff2"), url("/IndoTravel-landing/fonts/Merriweather-400.woff") format("woff"), url("./../fonts/Merriweather-400.ttf") format("truetype"), url("./../fonts/Merriweather-400.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/Nunito-200.woff2") format("woff2"), url("/IndoTravel-landing/fonts/Nunito-200.woff") format("woff"), url("./../fonts/Nunito-200.ttf") format("truetype"), url("./../fonts/Nunito-200.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Nunito-300.woff2") format("woff2"), url("/IndoTravel-landing/fonts/Nunito-300.woff") format("woff"), url("./../fonts/Nunito-300.ttf") format("truetype"), url("./../fonts/Nunito-300.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Nunito-600.woff2") format("woff2"), url("/IndoTravel-landing/fonts/Nunito-600.woff") format("woff"), url("./../fonts/Nunito-600.ttf") format("truetype"), url("./../fonts/Nunito-600.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Nunito-700.woff2") format("woff2"), url("/IndoTravel-landing/fonts/Nunito-700.woff") format("woff"), url("./../fonts/Nunito-700.ttf") format("truetype"), url("./../fonts/Nunito-700.eot") format("embedded-opentype");
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -moz-appearance: button;
+  appearance: button;
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type=search] {
+  -moz-appearance: button;
+  appearance: button;
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-size: 20px;
+  color: #303030;
+  background-color: #FFFFFF;
+  font-weight: 300;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: content-box;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.btn {
+  background-color: #FCB500;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #FFFFFF;
+  outline-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.3s ease-in, outline-color 0.3s ease-in;
+}
+
+.btn:focus-visible {
+  outline-offset: -2px;
+  outline: 2px solid rgb(194, 144, 15);
+  background: rgb(243, 200, 88);
+}
+
+.btn:active {
+  background: rgb(208, 150, 0);
+}
+
+.btn:disabled {
+  background: #AFAFAF;
+}
+
+.section__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 60px;
+  letter-spacing: -0.03rem;
+}
+
+.section__intro {
+  font-family: "Merriweather";
+  font-size: 34px;
+  line-height: 1.5;
+  letter-spacing: 0.04rem;
+  max-width: 580px;
+  margin-bottom: 80px;
+}
+
+.header {
+  background-image: -webkit-image-set(url("/IndoTravel-landing/img/header/header-banner.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner.jpg"));
+  background-image: image-set(url("/IndoTravel-landing/img/header/header-banner.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner.jpg"));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: clamp(312px, 57vw, 803px);
+}
+
+.header__top {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.64) 8.182%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header__menu {
+  position: relative;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 57px 0;
+  height: 29px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  color: #FFFFFF;
+}
+
+.header__invite {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  transform: translateX(78px);
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header__indonesia {
+  font-weight: 200;
+  font-size: 200px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: -0.3rem;
+}
+
+.header__description {
+  transform: translateX(78px);
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: 490px;
+  margin-bottom: 47px;
+}
+
+.btn--reserv {
+  padding: 24px 111px 24px 106px;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.burger {
+  align-self: center;
+  outline-color: rgba(255, 255, 255, 0);
+  transition: text-decoration-color 0.3s ease-in, outline-color 0.3s ease-in, color 0.3s ease-in;
+  color: #FFFFFF;
+}
+
+.burger:focus-visible {
+  outline: 2px solid #FCB500;
+}
+
+.burger:active {
+  color: #D09600;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  top: 97px;
+  right: 40px;
+  border-radius: 20px 0 20px 0;
+  background-color: #FCB500;
+  padding: 30px 35px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav__item {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.nav__link {
+  text-decoration-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  outline-color: rgba(255, 255, 255, 0);
+  transition: text-decoration-color 0.3s ease-in, outline-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.nav__link:focus-visible {
+  outline: 2px solid #C2900F;
+}
+
+.nav__link:active {
+  color: #D09600;
+}
+
+.about {
+  padding-bottom: 18px;
+}
+
+.about picture {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: url("/IndoTravel-landing/img/holder.webp");
+  /* путь к изображению-заглушке */
+  background-size: cover;
+  background-position: center;
+}
+
+.about__wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.about__content {
+  padding-top: 187px;
+  flex-basis: 780px;
+}
+
+.about__top {
+  margin-bottom: 120px;
+}
+
+.about__top > .about__text--second {
+  display: none;
+}
+
+.about__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 285px;
+  letter-spacing: -0.03rem;
+}
+
+.about__text--first {
+  transform: translateX(300px);
+}
+
+.about__text--second {
+  transform: translateX(100px);
+  max-width: 290px;
+}
+
+.about__bot {
+  display: flex;
+  gap: 20px;
+}
+
+.about__bot picture {
+  height: 100%;
+  transform: translateY(125px);
+}
+
+.about__left-col img {
+  margin-bottom: 100px;
+}
+
+.about__gallery {
+  transform: translateY(-63px);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.about__gallery picture:last-child {
+  align-self: flex-end;
+}
+
+.slider {
+  display: none;
+  position: relative;
+  height: 208px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider {
+  min-width: 0;
+}
+
+.slider__item picture {
+  display: block;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+  gap: 3px;
+  bottom: 10px;
+  z-index: 9999;
+  left: calc(50% - 20px);
+}
+
+.slick-dots li {
+  background-color: #FFFFFF;
+  width: 4px;
+  border-radius: 50%;
+  height: 4px;
+}
+
+.slick-dots li.slick-active {
+  width: 12px;
+  border-radius: 10px;
+  background-color: #FCB500;
+}
+
+.slick-dots button {
+  font-size: 0;
+}
+
+.travel {
+  padding-bottom: 112px;
+}
+
+.travel__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__wrapper {
+  max-width: 580px;
+  position: relative;
+}
+
+.accordion__wrapper::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 6px;
+  bottom: 0;
+  height: calc(100% - 50px);
+  width: 2px;
+  background-color: #FCB500;
+}
+
+.accordion__text {
+  font-size: 18px;
+  max-width: 553px;
+  line-height: 1.5;
+  font-weight: 300;
+  transform: translateX(5px);
+  margin-bottom: 64px;
+  padding-left: 95px;
+  letter-spacing: -0.029rem;
+}
+
+.accordion__title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: -0.028rem;
+  margin-bottom: 38px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.accordion__title span:last-child {
+  min-width: 409px;
+}
+
+.accordion__title:focus-visible {
+  outline: none;
+}
+
+.accordion__title:focus-visible span {
+  outline: 2px solid #FCB500;
+}
+
+.accordion__title:active {
+  color: #D09600;
+}
+
+.acc-icon {
+  transition: scale 0.3s ease-in;
+  z-index: 2;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #FCB500;
+  margin-left: 6px;
+  margin-right: 76px;
+}
+
+.ui-accordion-header-active {
+  margin-bottom: 18px;
+}
+
+.acc-icon-active {
+  width: 30px;
+  height: 30px;
+  margin-left: 0;
+  margin-right: 70px;
+}
+
+.map {
+  width: 480px;
+  height: 410px;
+  transform: translateY(-24px);
+}
+
+.map svg > * {
+  transition: fill 0.3s ease-in;
+}
+
+.calculator {
+  background-image: -webkit-image-set(url("/IndoTravel-landing/img/calculator-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg.jpg") 1x);
+  background-image: image-set(url("/IndoTravel-landing/img/calculator-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg.jpg") 1x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  color: #FFFFFF;
+}
+
+.calculator__invite {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  max-width: 480px;
+  margin-bottom: 80px;
+  letter-spacing: -0.03rem;
+}
+
+.price {
+  border-radius: 30px 30px 0px 0px;
+  padding: 68px 60px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(230, 205, 173, 0.3);
+}
+
+.price__container {
+  border-radius: 20px;
+  padding: 23px 20px 20px 38px;
+  background: rgba(33, 25, 25, 0.78);
+  display: flex;
+  gap: 39px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select {
+  position: relative;
+  width: 217px;
+  padding: 12px 26px 0 2px;
+  cursor: pointer;
+}
+
+.select:focus-visible {
+  outline: none;
+}
+
+.select:focus-visible .select__arrow {
+  color: #FCB500;
+}
+
+.select * {
+  transition: color 0.3s ease-in;
+}
+
+.select:active * {
+  color: #FCB500;
+}
+
+.select .select--options .select__arrow {
+  right: 40px;
+}
+
+.select__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 12px;
+}
+
+.select__placeholder {
+  max-width: 143px;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.select__arrow {
+  position: absolute;
+  right: 20px;
+  border-radius: 50%;
+  padding: 6px 6px;
+  top: 30px;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.select--date,
+.select--people,
+.select--options {
+  position: relative;
+}
+
+.select__placeholder--options {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price__button {
+  padding: 22px 0 22px;
+  width: 219px;
+  font-size: 18px;
+  height: 67px;
+  transform: translate(-3px, 6px);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: #303030;
+  background: rgb(255, 255, 255);
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 5;
+  position: absolute;
+  top: 106px;
+}
+
+.popup--date {
+  width: 300px;
+  right: calc(50% - 150px);
+}
+
+.popup__title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.popup__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.popup__month-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 9px 15px 16px 0;
+  border-right: 1px solid rgb(192, 192, 192);
+  box-sizing: content-box;
+  width: 127px;
+}
+
+.popup__month-item {
+  text-align: center;
+  color: rgb(192, 192, 192);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  outline-color: rgba(255, 255, 255, 0);
+  transition: color 0.3s ease-in, outline-color 0.3s ease-in;
+}
+
+.popup__month-item:focus-visible {
+  color: #FCB500;
+  outline: 2px solid #FCB500;
+}
+
+.popup__month-item--active {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FCB500;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.popup__days-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.popup__days-item {
+  color: rgb(48, 48, 48);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+.popup__days-item:focus-visible {
+  outline: none;
+  font-size: 16px;
+}
+
+.popup__days-item--active {
+  color: #FCB500;
+  font-size: 16px;
+}
+
+.popup__button {
+  border-radius: 8px;
+  padding: 10px 30px;
+  margin-left: auto;
+}
+
+.popup--people {
+  right: calc(50% - 25px);
+  width: 50px;
+  height: 277px;
+}
+
+.popup__people-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.popup__people-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 130%;
+  cursor: pointer;
+}
+
+.popup__people-item:focus-visible {
+  outline: none;
+  font-size: 16px;
+}
+
+.popup__days-item--active {
+  color: #FCB500;
+  font-size: 16px;
+}
+
+.popup--options {
+  right: 18px;
+  right: calc(50% - 105px);
+}
+
+.popup__options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.popup__options-item {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.popup__options-item::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  transition: border-color 0.3s ease-in;
+  border: 1px solid rgb(48, 48, 48);
+  background: rgb(255, 255, 255);
+}
+
+.popup__options-item:focus-visible {
+  outline: none;
+}
+
+.popup__options-item:focus-visible::before {
+  outline: none;
+  border-color: #C2900F;
+}
+
+.popup__options-item--checked::before {
+  background-image: url("/IndoTravel-landing/img/icons/mark-button.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.why {
+  padding: 150px 0;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px 20px;
+}
+
+.why__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.why__card::before {
+  position: absolute;
+  left: 17px;
+  top: 7px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.why__card:nth-child(1):before {
+  background-image: url("/IndoTravel-landing/img/why/compas.svg");
+}
+
+.why__card:nth-child(2):before {
+  background-image: url("/IndoTravel-landing/img/why/suitcase.svg");
+}
+
+.why__card:nth-child(3):before {
+  background-image: url("/IndoTravel-landing/img/why/shield.svg");
+}
+
+.why__card:nth-child(4):before {
+  background-image: url("/IndoTravel-landing/img/why/meds.svg");
+}
+
+.why__card:nth-child(5):before {
+  background-image: url("/IndoTravel-landing/img/why/pacifier.svg");
+}
+
+.why__card:nth-child(6):before {
+  background-image: url("/IndoTravel-landing/img/why/hot-food.svg");
+}
+
+.why__card > :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.why__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.03rem;
+}
+
+.why__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -0.026em;
+}
+
+.section__title--album {
+  margin-bottom: 60px;
+}
+
+.album__slider .slick-list {
+  padding: 0 20% 0 0;
+}
+
+.album__slider .slick-track {
+  position: relative;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.prev {
+  left: 0px;
+}
+
+.next {
+  right: 0px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  cursor: auto;
+}
+
+.prev svg,
+.next svg {
+  position: absolute;
+  top: calc(50% - 45px);
+  color: #FFFFFF;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in, opacity 0.3s ease-in;
+  cursor: pointer;
+}
+
+.prev svg {
+  right: 0;
+  opacity: 0;
+}
+
+.next svg {
+  left: 0;
+  opacity: 1;
+}
+
+#arrow-prev,
+#arrow-next {
+  border-radius: 50%;
+  transition: color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.circle {
+  transition: color 0.3s ease-in;
+}
+
+.prev:focus,
+.next:focus {
+  outline: none;
+}
+
+.prev:focus-visible svg,
+.next:focus-visible svg {
+  background-color: rgba(249, 249, 249, 0.3);
+  opacity: 1;
+  outline: none;
+}
+
+.prev svg:active,
+.next svg:active {
+  background-color: #fff;
+  outline: none;
+  opacity: 1;
+}
+
+.prev svg:active .circle,
+.next svg:active .circle {
+  color: #FCB500;
+}
+
+.reserve {
+  padding: 150px 0 146px;
+}
+
+.container--reserve {
+  max-width: 980px;
+}
+
+.reserve__wrapper {
+  border-radius: 30px;
+  border: 1px solid #AFAFAF;
+  padding: 60px 100px;
+}
+
+.reserve__title {
+  font-family: Merriweather;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 0.04rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form__choice {
+  display: flex;
+  gap: 58px;
+}
+
+.form__choice .select-wrapper {
+  border-radius: 12px;
+  border: 1px solid #AFAFAF;
+  padding: 12px 17px 12px 15px;
+  flex-basis: 221px;
+}
+
+.form__choice .select {
+  width: 100%;
+}
+
+.form__choice .select--date,
+.form__choice .select--options,
+.form__choice .select--people {
+  padding: unset;
+}
+
+.form__choice .select--people .select__title {
+  transform: translateX(-6px);
+}
+
+.form__choice .select--options .select__title {
+  transform: translateX(-10px);
+}
+
+.form__choice .select .select-error {
+  bottom: -35px;
+  left: -15px;
+}
+
+.form__choice .select__arrow {
+  right: -4px;
+  top: 16px;
+}
+
+.select-error {
+  position: absolute;
+  font-size: 16px;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 700;
+}
+
+.form__date-input,
+.form__people-input,
+.form__options-input {
+  display: none;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__input-wrapper label {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.form__input-wrapper--tel label {
+  left: 25px;
+}
+
+.form__name-input {
+  width: 100%;
+}
+
+.form__name-input,
+.form__mail-input,
+.form__tel-input {
+  padding: 45px 15px 33px;
+  height: 99px;
+  border-radius: 12px;
+  border: 1px solid #AFAFAF;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 130%;
+  transition: border-color 0.3s ease-in;
+}
+
+.form__name-input:focus,
+.form__mail-input:focus,
+.form__tel-input:focus {
+  border-color: #FCB500;
+  outline: none;
+}
+
+.form__name-input:active,
+.form__mail-input:active,
+.form__tel-input:active {
+  border-color: #FCB500;
+  outline: none;
+}
+
+.form__name-input::-moz-placeholder,
+.form__mail-input::-moz-placeholder,
+.form__tel-input::-moz-placeholder {
+  color: rgb(175, 175, 175);
+}
+
+.form__name-input::placeholder,
+.form__mail-input::placeholder,
+.form__tel-input::placeholder {
+  color: rgb(175, 175, 175);
+}
+
+.contacts-row {
+  display: flex;
+  gap: 60px;
+}
+
+.form__input-wrapper--mail,
+.form__input-wrapper--tel {
+  flex-basis: 50%;
+}
+
+.form__mail-input,
+.form__tel-input {
+  width: 100%;
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.form__result {
+  flex-basis: calc(50% - 30px);
+}
+
+.form__details {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+.form__price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.form__button {
+  flex-basis: calc(50% - 30px);
+  padding: 24px 100px 25px 111px;
+}
+
+.footer {
+  padding: 80px 0;
+  color: #fff;
+  background-image: -webkit-image-set(url("/IndoTravel-landing/img/footer/footer-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg.jpg"));
+  background-image: image-set(url("/IndoTravel-landing/img/footer/footer-bg.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg.jpg"));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-areas: "col menu contacts callback";
+}
+
+.footer__wrapper .logo {
+  margin-bottom: 256px;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.031rem;
+  margin-bottom: 20px;
+}
+
+.footer__col {
+  margin-right: 100px;
+  max-width: 191px;
+  grid-area: col;
+  padding-top: 16px;
+}
+
+.menu {
+  margin-right: 70px;
+  grid-area: menu;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu__item {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -0.02rem;
+}
+
+.menu__link {
+  display: block;
+}
+
+.menu__link:focus {
+  outline: 2px solid #C2900F;
+}
+
+.menu__link:active {
+  color: #D09600;
+}
+
+.footer__contacts {
+  margin-right: 62px;
+  max-width: 250px;
+  grid-area: contacts;
+}
+
+.footer__contacts a:focus-visible {
+  outline: 2px solid #C2900F;
+}
+
+.footer__contacts > p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -0.03rem;
+}
+
+.footer__contacts > p:active {
+  color: #D09600;
+}
+
+.footer__contacts > p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.footer__contacts > p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__social-link:focus-visible {
+  outline: 2px solid #C2900F;
+}
+
+.footer__social-link:active {
+  color: #D09600;
+}
+
+.footer__callback {
+  max-width: 400px;
+  grid-area: callback;
+  margin-right: -8px;
+}
+
+.footer__desc {
+  max-width: 280px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 6px;
+  letter-spacing: -0.03rem;
+}
+
+.footer__form {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 106px;
+}
+
+.footer__form input {
+  border: none;
+  border-bottom: 1px solid #AFAFAF;
+  padding: unset;
+  padding-top: 15px;
+  height: 62px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(175, 175, 175);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.footer__form input:focus {
+  border-color: #FCB500;
+  outline: none;
+}
+
+.footer__form input:active {
+  border-color: #FCB500;
+  outline: none;
+}
+
+.footer__form button {
+  border-radius: 8px;
+  background-color: #FCB500;
+  padding: 23px 41px 23px 40px;
+  color: #fff;
+}
+
+.designer {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  letter-spacing: -0.02rem;
+}
+
+.designer__copyright {
+  display: none;
+}
+
+.select-error--footer {
+  position: absolute;
+  bottom: -25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.success-message {
+  display: none;
+  color: green;
+  position: absolute;
+  bottom: -25px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 940px;
+  }
+
+  .header__menu {
+    padding: 40px 0 36px;
+  }
+
+  .header .logo {
+    max-width: 138px;
+    max-height: 25px;
+  }
+
+  .header__content {
+    padding: 22px 0;
+  }
+
+  .header__invite {
+    font-size: 30px;
+  }
+
+  .header__indonesia {
+    font-size: 150px;
+    line-height: 1.1;
+    margin-bottom: 0;
+    letter-spacing: -0.2rem;
+  }
+
+  .header__description {
+    font-size: 18px;
+    transform: translate(78px, -15px);
+    margin-bottom: 12px;
+    letter-spacing: -0.025rem;
+  }
+
+  .btn--reserv {
+    padding: 18px 78px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0px;
+  }
+
+  .burger {
+    align-self: flex-start;
+  }
+
+  .nav {
+    top: 71px;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 670px) {
+  .header .logo {
+    max-width: 102px;
+    max-height: 19px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .header__menu {
+    padding: 37px 0 19px;
+  }
+
+  .header__content {
+    padding: 28px 0;
+  }
+
+  .header__invite {
+    transform: translateX(90px);
+    font-size: 20px;
+  }
+
+  .header__indonesia {
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: -0.1rem;
+  }
+
+  .header__description {
+    font-size: 14px;
+    transform: translate(90px, 0);
+    margin-bottom: 15px;
+    letter-spacing: -0.022rem;
+  }
+
+  .btn--reserv {
+    border-radius: 6px;
+    padding: 12px 55px 12px 54px;
+    font-size: 14px;
+  }
+
+  .nav {
+    top: 63px;
+    padding: 30px;
+  }
+
+  .nav__list {
+    gap: 20px;
+  }
+
+  .nav__item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    max-width: clamp(270px, 84vw, 600px);
+  }
+
+  .header__menu {
+    padding: 20px 0;
+    height: 19px;
+  }
+
+  .header__content {
+    padding: 20px 0;
+  }
+
+  .header__invite {
+    font-size: clamp(16px, 4.5vw, 18px);
+    transform: unset;
+    margin-bottom: 3px;
+  }
+
+  .header__indonesia {
+    font-size: clamp(50px, 15.6vw, 80px);
+    line-height: 1.08;
+    margin-bottom: 13px;
+    letter-spacing: 0rem;
+    letter-spacing: -0.07rem;
+    transform: translateX(-4px);
+  }
+
+  .header__description {
+    transform: unset;
+    word-spacing: -1px;
+    font-size: clamp(12px, 3.5vw, 14px);
+    margin-bottom: 26px;
+    letter-spacing: -0.008rem;
+  }
+
+  .btn--reserv {
+    padding: 8px 30px 8px 26px;
+    font-size: 12px;
+  }
+
+  .burger {
+    max-width: 22px;
+    max-height: 11px;
+    align-self: center;
+  }
+
+  .nav {
+    top: 44px;
+    right: 22px;
+    padding: 20px;
+  }
+
+  .nav__list {
+    gap: 23px;
+  }
+
+  .nav__item {
+    font-size: 12px;
+  }
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: #f3c858;
+  }
+
+  .burger:hover {
+    color: #FCB500;
+  }
+
+  .nav__link:hover {
+    -webkit-text-decoration: underline 2px;
+    text-decoration: underline 2px;
+  }
+
+  .accordion__title:hover {
+    color: #FCB500;
+  }
+
+  .select:hover .select__arrow {
+    background-color: #fff;
+    color: #FCB500;
+  }
+
+  .popup__month-item:hover {
+    color: #FCB500;
+  }
+
+  .popup__days-item:hover {
+    outline: none;
+    font-size: 16px;
+  }
+
+  .popup__people-item:hover {
+    outline: none;
+    font-size: 16px;
+  }
+
+  .popup__options-item:hover::before {
+    border-color: #FCB500;
+  }
+
+  .prev:hover svg,
+  .next:hover svg {
+    opacity: 1;
+  }
+
+  .prev svg:hover #arrow-prev {
+    transform: translateX(-10px);
+    color: #303030;
+  }
+
+  .next svg:hover #arrow-next {
+    color: #303030;
+    transform: translateX(10px);
+  }
+
+  .prev svg:hover,
+  .next svg:hover {
+    background-color: white;
+    opacity: 1;
+  }
+
+  .prev svg:hover .slick-list,
+  .next svg:hover .slick-list {
+    padding: 0 10% 0 0;
+  }
+
+  .form__name-input:hover,
+  .form__mail-input:hover,
+  .form__tel-input:hover {
+    border-color: #FCB500;
+  }
+
+  .menu__link:hover {
+    -webkit-text-decoration: underline 2px;
+    text-decoration: underline 2px;
+  }
+
+  .footer__contacts > p:hover {
+    color: #FCB500;
+    -webkit-text-decoration: underline 2px;
+    text-decoration: underline 2px;
+  }
+
+  .footer__social-link:hover {
+    color: #FCB500;
+  }
+
+  .footer__form input:hover {
+    border-color: #FCB500;
+  }
+}
+
+@media (width <= 1200px) {
+  .section__title {
+    margin-bottom: 40px;
+  }
+
+  .section__intro {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .header {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/header/header-banner-1024.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner-1024.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner-1024.jpg"));
+    background-image: image-set(url("/IndoTravel-landing/img/header/header-banner-1024.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner-1024.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner-1024.jpg"));
+  }
+
+  .about {
+    padding-bottom: 25px;
+  }
+
+  .about__wrapper {
+    gap: 23px;
+  }
+
+  .about__content {
+    padding-top: 120px;
+  }
+
+  .about__top {
+    margin-bottom: 90px;
+  }
+
+  .about__text--first {
+    transform: translateX(240px);
+  }
+
+  .about__text--second {
+    transform: unset;
+    max-width: 300px;
+  }
+
+  .about__bot {
+    gap: 15px;
+  }
+
+  .about__bot picture {
+    max-height: 297px;
+    transform: translate(5px, 65px);
+  }
+
+  .about__left-col img {
+    margin-bottom: 60px;
+  }
+
+  .about__gallery {
+    transform: translateY(-56px);
+    gap: 79px;
+  }
+
+  .about__gallery picture:last-child img {
+    max-height: 208px;
+    width: auto;
+  }
+
+  .travel {
+    padding-bottom: 82px;
+  }
+
+  .travel__intro {
+    margin-bottom: 60px;
+  }
+
+  .accordion__text {
+    box-sizing: content-box;
+    width: 440px;
+    margin-bottom: 37px;
+  }
+
+  .map {
+    width: clamp(319px, 31vw, 480px);
+    height: clamp(268px, 26vw, 410px);
+    transform: translateY(-25px);
+  }
+
+  .calculator {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/calculator-bg-1024.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg-1024.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg-1024.jpg") 1x);
+    background-image: image-set(url("/IndoTravel-landing/img/calculator-bg-1024.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg-1024.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg-1024.jpg") 1x);
+  }
+
+  .calculator {
+    padding-top: 80px;
+  }
+
+  .price {
+    padding: 53px 60px 51px;
+  }
+
+  .price__container {
+    gap: 0px;
+    padding: 23px 20px 20px 19px;
+    border-radius: 16px;
+  }
+
+  .price__container > :not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .price__container > :nth-child(3) {
+    margin-right: clamp(10px, 2.34375vw, 24px);
+  }
+
+  .select {
+    width: 186px;
+  }
+
+  .select__arrow {
+    top: 29px;
+    right: 29px;
+  }
+
+  .price__button {
+    font-size: clamp(14px, 1.7578125vw, 18px);
+    width: 189px;
+    transform: translate(0, 0);
+    padding: 9px 0 28px;
+    height: 53px;
+    align-self: center;
+  }
+
+  .why {
+    padding: 120px 0;
+  }
+
+  .why .section__title--why {
+    margin-bottom: 60px;
+  }
+
+  .why__grid {
+    gap: 57px 20px;
+  }
+
+  .section__title--album {
+    margin-bottom: 60px;
+  }
+
+  .section__intro--album {
+    max-width: 550px;
+  }
+
+  .prev svg {
+    right: 90px;
+  }
+
+  .next svg {
+    left: 90px;
+  }
+
+  .album__item {
+    max-width: 822px;
+  }
+
+  .reserve {
+    padding: 120px 0;
+  }
+
+  .container--reserve {
+    max-width: 940px;
+  }
+
+  .reserve__wrapper {
+    padding: 60px 80px 68px;
+  }
+
+  .reserve__title {
+    font-size: 31px;
+    margin-bottom: 57px;
+    letter-spacing: unset;
+  }
+
+  .form {
+    gap: 0;
+  }
+
+  .form > :not(:last-child) {
+    margin-bottom: 29px;
+  }
+
+  .form > :nth-child(3) {
+    margin-bottom: 31px;
+  }
+
+  .form__choice > :nth-child(2) {
+    padding: 12px 17px 12px 9px;
+  }
+
+  .form__choice .select-wrapper {
+    padding: 12px 17px 12px 13px;
+  }
+
+  .form__choice .select-wrapper:nth-child(2) {
+    padding: 12px 17px 12px 9px;
+  }
+
+  .form__choice .select-wrapper:nth-child(3) {
+    padding: 12px 17px 12px 5px;
+  }
+
+  .form__choice .select--people .select__title {
+    transform: translateX(0px);
+  }
+
+  .form__choice .select--options .select__title {
+    transform: translateX(0px);
+  }
+
+  .form__input-wrapper label {
+    top: 14px;
+  }
+
+  .form__button {
+    max-width: 298px;
+    padding: 18px 81px 18px 81px;
+    height: 63px;
+    transform: translateY(-4px);
+    letter-spacing: -0.032rem;
+    border-radius: 10px;
+  }
+
+  .footer {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/footer/footer-bg-1024.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg-1024.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg-1024.jpg") 1x);
+    background-image: image-set(url("/IndoTravel-landing/img/footer/footer-bg-1024.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg-1024.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg-1024.jpg") 1x);
+  }
+
+  .footer {
+    padding: 80px 0 38px;
+  }
+
+  .footer__wrapper {
+    grid-template-areas: "col menu contacts " "col menu callback";
+  }
+
+  .footer__wrapper .logo {
+    margin-bottom: 0;
+    max-width: 140px;
+  }
+
+  .footer__copyright {
+    padding-bottom: 30px;
+  }
+
+  .footer__col {
+    margin-right: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin-right: 46px;
+  }
+
+  .footer__contacts {
+    margin-bottom: 63px;
+  }
+
+  .footer__contacts > p:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .footer__desc {
+    margin-bottom: 2px;
+  }
+
+  .footer__form {
+    margin-bottom: 63px;
+  }
+}
+
+@media (width <= 900px) {
+  .section__title {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .section__intro {
+    font-size: 20px;
+    max-width: 380px;
+    letter-spacing: 0.025rem;
+    margin-bottom: 40px;
+  }
+
+  .header {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/header/header-banner-768.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner-768.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner-768.jpg"));
+    background-image: image-set(url("/IndoTravel-landing/img/header/header-banner-768.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner-768.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner-768.jpg"));
+  }
+
+  .about {
+    padding-bottom: 13px;
+  }
+
+  .about__wrapper {
+    gap: 27px;
+  }
+
+  .about__content {
+    padding-top: 80px;
+  }
+
+  .about__top {
+    margin-bottom: 60px;
+  }
+
+  .about__text {
+    font-size: 14px;
+    max-width: 300px;
+    letter-spacing: -0.022rem;
+  }
+
+  .about__text--first {
+    transform: translateX(80px);
+  }
+
+  .about__bot picture {
+    max-width: 140px;
+    transform: translate(5px, 90px);
+  }
+
+  .about__gallery {
+    transform: translateY(-48px);
+    gap: 60px;
+  }
+
+  .travel {
+    padding-bottom: 92px;
+  }
+
+  .travel__intro {
+    margin-bottom: 40px;
+  }
+
+  .accordion {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .accordion__text {
+    letter-spacing: -0.022rem;
+    font-size: 14px;
+    width: clamp(440px, 67.57vw, 519px);
+    margin-bottom: 40px;
+  }
+
+  .accordion__item:last-child .accordion__title {
+    margin-bottom: 27px;
+  }
+
+  .accordion__title {
+    font-size: 16px;
+    margin-bottom: 44px;
+  }
+
+  .ui-accordion-header-active {
+    margin-bottom: 19px;
+  }
+
+  .map {
+    align-self: center;
+    width: 380px;
+    transform: translateY(0);
+    height: 320px;
+  }
+
+  .calculator {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/calculator-bg-768.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg-768.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg-768.jpg") 1x);
+    background-image: image-set(url("/IndoTravel-landing/img/calculator-bg-768.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg-768.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg-768.jpg") 1x);
+  }
+
+  .calculator {
+    padding-top: 40px;
+  }
+
+  .calculator__invite {
+    font-size: 14px;
+    max-width: 325px;
+    letter-spacing: -0.025rem;
+  }
+
+  .container--calculator {
+    padding-left: 36px;
+  }
+
+  .calculator__wrapper {
+    display: flex;
+    gap: 14px;
+  }
+
+  .price {
+    max-width: 300px;
+    border-radius: 12px 12px 0px 0px;
+    padding: 30px;
+    margin-top: -40px;
+  }
+
+  .price__container {
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px 17px 28px 37px;
+    gap: 38px;
+  }
+
+  .select {
+    padding: 9px 26px 0 14px;
+  }
+
+  .select .select--options .select__arrow {
+    right: 9px;
+  }
+
+  .select__title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .select__placeholder {
+    font-size: 14px;
+  }
+
+  .select__arrow {
+    top: 17px;
+    right: 9px;
+  }
+
+  .price__button {
+    width: 173px;
+    height: 42px;
+    padding: 9px 0 13px;
+    align-self: flex-start;
+    font-size: 14px;
+    margin-left: 0;
+    border-radius: 5px;
+  }
+
+  .why {
+    padding: 90px 0;
+  }
+
+  .why .section__title--why {
+    margin-bottom: 30px;
+  }
+
+  .why__grid {
+    gap: 40px 20px;
+  }
+
+  .why__card > :not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .why__card > :nth-child(2) {
+    margin-bottom: 15px;
+  }
+
+  .why__title {
+    font-size: 16px;
+  }
+
+  .why__text {
+    font-size: 14px;
+  }
+
+  .section__title--album {
+    margin-bottom: 30px;
+  }
+
+  .section__intro--album {
+    max-width: 440px;
+  }
+
+  .album__slider .slick-list {
+    padding: 0;
+  }
+
+  .prev svg {
+    right: 96px;
+  }
+
+  .next svg {
+    left: 96px;
+  }
+
+  .album__item {
+    max-width: 768px;
+  }
+
+  .reserve {
+    padding: 90px 0 102px;
+  }
+
+  .container--reserve {
+    max-width: 700px;
+  }
+
+  .reserve__wrapper {
+    padding: 40px 60px;
+    border-radius: 20px;
+  }
+
+  .reserve__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .form {
+    gap: 0;
+  }
+
+  .form > :not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .form > :nth-child(3) {
+    margin-bottom: 23px;
+  }
+
+  .form__choice {
+    gap: 35px;
+  }
+
+  .form__choice .select .select-error {
+    bottom: -30px;
+  }
+
+  .form__choice .select__arrow {
+    right: -8px;
+  }
+
+  .select-error {
+    font-size: 12px;
+  }
+
+  .form__input-wrapper label {
+    top: 13px;
+    left: 14px;
+    font-size: 14px;
+  }
+
+  .form__input-wrapper--tel label {
+    left: 20px;
+  }
+
+  .form__name-input,
+  .form__mail-input,
+  .form__tel-input {
+    height: 83px;
+    padding: 45px 15px 21px;
+    border-radius: 7px;
+  }
+
+  .contacts-row {
+    gap: 20px;
+  }
+
+  .form__details {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+
+  .form__price {
+    font-size: 18px;
+  }
+
+  .form__button {
+    max-width: 219px;
+    padding: 12px 57px;
+    font-size: 14px;
+    height: 45px;
+    margin-bottom: 7px;
+    border-radius: 6px;
+    align-self: flex-end;
+    transform: unset;
+  }
+
+  .footer {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/footer/footer-bg-768.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg-768.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg-768.jpg") 1x);
+    background-image: image-set(url("/IndoTravel-landing/img/footer/footer-bg-768.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg-768.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg-768.jpg") 1x);
+  }
+
+  .footer {
+    padding: 34px 0 50px;
+  }
+
+  .footer__wrapper {
+    grid-template-areas: "col menu contacts" "col callback callback";
+  }
+
+  .footer__copyright {
+    transform: translateX(10px);
+  }
+
+  .footer__title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer__col {
+    margin-right: 0;
+  }
+
+  .menu {
+    padding-top: 25px;
+    margin-right: 35px;
+  }
+
+  .menu__list {
+    gap: 10px;
+  }
+
+  .menu__item {
+    font-size: 14px;
+  }
+
+  .footer__contacts {
+    padding-top: 25px;
+  }
+
+  .footer__contacts > p {
+    font-size: 14px;
+  }
+
+  .footer__callback {
+    max-width: 478px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__callback .footer__title {
+    font-size: 15px;
+    letter-spacing: 0.015rem;
+  }
+
+  .footer__desc {
+    font-size: 14px;
+    max-width: 230px;
+    margin-bottom: 10px;
+  }
+
+  .footer__form {
+    margin-bottom: 51px;
+  }
+
+  .footer__form input {
+    width: 260px;
+    padding: 0;
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .footer__form button {
+    border-radius: 6px;
+    padding: 17px 32px 17px 31px;
+  }
+
+  .designer {
+    align-self: flex-end;
+  }
+}
+
+@media (width <= 670px) {
+  .section__title {
+    font-size: 12px;
+    letter-spacing: -0.02rem;
+    margin-bottom: 15px;
+  }
+
+  .section__intro {
+    font-size: 16px;
+    margin-bottom: 25px;
+    letter-spacing: 0.02rem;
+  }
+
+  .about {
+    padding-bottom: 52px;
+  }
+
+  .about__content {
+    min-width: 0;
+    padding-top: 50px;
+  }
+
+  .about__top {
+    margin-bottom: -2px;
+  }
+
+  .about__top > .about__text--second {
+    display: block;
+  }
+
+  .about__text {
+    font-size: 12px;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .about__text--first {
+    margin-bottom: 25px;
+    transform: unset;
+  }
+
+  .about__text--second {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .about__gallery,
+  .about__bot,
+  .about__left-col {
+    display: none;
+  }
+
+  .about__gallery > img,
+  .about__bot > img,
+  .about__left-col > img {
+    display: none;
+  }
+
+  .slider {
+    display: block;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 25px;
+  }
+
+  .travel {
+    padding-bottom: 49px;
+  }
+
+  .travel__intro {
+    margin-bottom: 26px;
+  }
+
+  .accordion__wrapper::before {
+    left: 7px;
+    height: calc(100% - 48px);
+  }
+
+  .accordion__text {
+    width: 230px;
+    font-size: 12px;
+    padding-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  .accordion__title span:last-child {
+    min-width: unset;
+  }
+
+  .accordion__title {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .acc-icon {
+    margin-left: 3px;
+    margin-right: 14px;
+    width: 11px;
+    height: 11px;
+    min-height: 11px;
+    min-width: 11px;
+    max-height: 11px;
+    max-width: 11px;
+  }
+
+  .ui-accordion-header-active {
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .acc-icon-active {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    margin-right: 13px;
+    margin-left: 0;
+  }
+
+  .map {
+    width: 270px;
+    height: 235px;
+  }
+
+  .calculator {
+    padding-top: 20px;
+  }
+
+  .calculator__invite {
+    font-size: 12px;
+    margin-bottom: 53px;
+  }
+
+  .container--calculator {
+    padding-left: 20px;
+  }
+
+  .calculator__wrapper {
+    flex-direction: column;
+  }
+
+  .price {
+    max-width: 250px;
+    align-self: center;
+    padding: 23px 23px 24px 27px;
+  }
+
+  .price__container {
+    padding: 17px 25px 26px;
+    gap: 0;
+  }
+
+  .select-wrapper:not(:last-of-type) {
+    margin-bottom: 49px;
+  }
+
+  .select-wrapper:last-of-type {
+    margin-bottom: 41px;
+  }
+
+  .select {
+    padding: 0 8px;
+    width: 150px;
+  }
+
+  .select__title {
+    font-size: 12px;
+  }
+
+  .select__placeholder {
+    font-size: 12px;
+  }
+
+  .select__arrow {
+    top: 4px;
+    right: 5px;
+  }
+
+  .price__button {
+    font-size: 12px;
+    width: 132px;
+    align-self: center;
+    height: 34px;
+  }
+
+  .why {
+    padding: 50px 0;
+  }
+
+  .why .section__title--why {
+    margin-bottom: 15px;
+  }
+
+  .why .section__intro--why {
+    margin-bottom: 52px;
+  }
+
+  .why__grid {
+    gap: 25px 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why__title {
+    font-size: 14px;
+  }
+
+  .why__text {
+    font-size: 12px;
+  }
+
+  .section__title--album {
+    margin-bottom: 15px;
+  }
+
+  .prev,
+  .next {
+    width: 72px;
+  }
+
+  .prev svg,
+  .next svg {
+    width: 34px;
+    height: 34px;
+    top: calc(50% - 17px);
+  }
+
+  .prev svg {
+    right: 13px;
+  }
+
+  .next svg {
+    left: 13px;
+  }
+
+  .album__item {
+    max-width: 320px;
+  }
+
+  .reserve {
+    padding: 50px 0;
+  }
+
+  .container--reserve {
+    max-width: 100%;
+  }
+
+  .reserve__wrapper {
+    padding: 20px 10px 17px;
+    border-radius: 10px;
+  }
+
+  .reserve__title {
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+
+  .form > :not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .form > :nth-child(3) {
+    margin-bottom: 22px;
+  }
+
+  .form__choice {
+    flex-direction: column;
+    padding: 0 45px;
+    gap: 15px;
+  }
+
+  .form__choice .select--options .select__title {
+    transform: translate(1px, -6px);
+  }
+
+  .form__choice .select--options .select__arrow {
+    right: -9px;
+    top: 0px;
+  }
+
+  .form__choice .select--options .select__title {
+    transform: translate(1px, -6px);
+  }
+
+  .form__choice .select-wrapper {
+    flex-basis: auto;
+    margin-bottom: 0;
+    padding: 10px 17px 12px 15px;
+  }
+
+  .form__choice .select__arrow {
+    right: -9px;
+    top: 5px;
+  }
+
+  .form__input-wrapper label {
+    font-size: 12px;
+    top: 6px;
+    left: 9px;
+  }
+
+  .form__input-wrapper--tel label {
+    top: 9px;
+    left: 8px;
+  }
+
+  .form__name-input,
+  .form__mail-input,
+  .form__tel-input {
+    font-size: 12px;
+    height: 71px;
+    padding: 34px 8px 8px;
+  }
+
+  .contacts-row {
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .form__footer {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .form__details {
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+
+  .form__button {
+    align-self: center;
+    max-width: 152px;
+    padding: 8px 32px;
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer__wrapper {
+    grid-template-areas: "col col" "menu contacts" "callback callback";
+  }
+
+  .footer__wrapper .logo {
+    max-width: 104px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+  }
+
+  .footer__col {
+    padding-top: 0;
+  }
+
+  .footer__copyright {
+    display: none;
+  }
+
+  .menu {
+    margin-right: 18px;
+  }
+
+  .menu__item {
+    font-size: 12px;
+  }
+
+  .footer__contacts {
+    margin-right: 0;
+  }
+
+  .footer__contacts > p:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  .footer__contacts > p:last-of-type {
+    margin-bottom: 15px;
+  }
+
+  .footer__contacts > p {
+    font-size: 12px;
+  }
+
+  .footer__social-list {
+    gap: 10px;
+  }
+
+  .footer__callback {
+    padding-top: 29px;
+  }
+
+  .footer__callback .footer__title {
+    font-size: 13px;
+  }
+
+  .footer__desc {
+    letter-spacing: -0.02rem;
+    max-width: 200px;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .footer__form {
+    transform: translateY(-4px);
+    margin-bottom: 49px;
+  }
+
+  .footer__form input {
+    width: 196px;
+    padding: 0;
+    height: 42px;
+    font-size: 10px;
+    padding-top: 18px;
+  }
+
+  .footer__form button {
+    padding: 13px 24px;
+  }
+
+  .designer {
+    align-self: flex-start;
+    font-size: 10px;
+  }
+
+  .designer__copyright {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .select-error--footer {
+    bottom: -15px;
+    font-size: 12px;
+  }
+
+  .success-message {
+    font-size: 12px;
+    bottom: -15px;
+  }
+}
+
+@media (width <= 450px) {
+  .header {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/header/header-banner-320.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner-320.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner-320.jpg"));
+    background-image: image-set(url("/IndoTravel-landing/img/header/header-banner-320.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/header/header-banner-320.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/header/header-banner-320.jpg"));
+  }
+
+  .calculator {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/calculator-bg-320.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg-320.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg-320.jpg") 1x);
+    background-image: image-set(url("/IndoTravel-landing/img/calculator-bg-320.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/calculator-bg-320.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/calculator-bg-320.jpg") 1x);
+  }
+
+  .footer {
+    background-image: -webkit-image-set(url("/IndoTravel-landing/img/footer/footer-bg-320.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg-320.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg-320.jpg") 1x);
+    background-image: image-set(url("/IndoTravel-landing/img/footer/footer-bg-320.avif") 1x type("image/avif"), url("/IndoTravel-landing/img/footer/footer-bg-320.webp") 1x type("image/webp"), url("/IndoTravel-landing/img/footer/footer-bg-320.jpg") 1x);
+  }
+}
+
+@media (width <= 960px) {
+  .popup {
+    top: 90px;
+  }
+}
+
+@media (width <= 60px) {
+  .why__card > :nth-child(2) {
+    margin-bottom: 15px;
+  }
+}

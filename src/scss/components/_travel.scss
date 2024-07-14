@@ -2,7 +2,7 @@
 	padding-bottom: 112px;
 
 	@media (width <=1200px) {
-		padding-bottom: 80px;
+		padding-bottom: 82px;
 	}
 
 	@media (width <=900px) {
@@ -20,7 +20,7 @@
 
 	&__intro {
 		@media (width <=1200px) {
-			margin-bottom: 62px;
+			margin-bottom: 60px;
 		}
 
 		@media (width <=900px) {
@@ -28,7 +28,7 @@
 		}
 
 		@media (width <=670px) {
-			margin-bottom: 24px;
+			margin-bottom: 26px;
 		}
 	}
 
@@ -248,6 +248,7 @@
 		max-width: 16px;
 		max-height: 16px;
 		margin-right: 13px;
+		margin-left: 0;
 	}
 }
 

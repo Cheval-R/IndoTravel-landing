@@ -3,6 +3,28 @@
 		image-set(url('./../../img/header/header-banner.avif') 1x type("image/avif"),
 			url('./../../img/header/header-banner.webp') 1x type("image/webp"),
 			url('./../../img/header/header-banner.jpg'));
+
+	@media (width <=1200px) {
+		background-image:
+			image-set(url('./../../img/header/header-banner-1024.avif') 1x type("image/avif"),
+				url('./../../img/header/header-banner-1024.webp') 1x type("image/webp"),
+				url('./../../img/header/header-banner-1024.jpg'));
+	}
+
+	@media (width <=900px) {
+		background-image:
+			image-set(url('./../../img/header/header-banner-768.avif') 1x type("image/avif"),
+				url('./../../img/header/header-banner-768.webp') 1x type("image/webp"),
+				url('./../../img/header/header-banner-768.jpg'));
+	}
+
+	@media (width <=450px) {
+		background-image:
+			image-set(url('./../../img/header/header-banner-320.avif') 1x type("image/avif"),
+				url('./../../img/header/header-banner-320.webp') 1x type("image/webp"),
+				url('./../../img/header/header-banner-320.jpg'));
+	}
+
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -123,6 +145,8 @@
 			line-height: 1.08;
 			margin-bottom: 13px;
 			letter-spacing: 0.0rem;
+			letter-spacing: -0.07rem;
+			transform: translateX(-4px);
 		}
 	}
 
