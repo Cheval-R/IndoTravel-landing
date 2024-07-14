@@ -54,17 +54,20 @@ const path = {
 		pug: 'src/pug/*.pug',
 		scss: 'src/scss/**/*.scss',
 		//! Все js файлы через массив
-		js: [
+		critjs: [
 			'src/libs/jquery-3.7.1.min.js',
-			'src/libs/jquery-ui.min.js',
 			'src/libs/slick.min.js',
-			'src/js/a_slider.js',
+			'src/js/slider.js',
+		],
+		js: [
+			'src/libs/jquery-ui.min.js',
 			'src/libs/just-validate.production.min.js',
 			'src/libs/inputmask.min.js',
 			'src/js/accordion.js',
 			'src/js/burger.js',
 			'src/js/calculator.js',
 			'src/js/reserve.js',
+			'src/js/album-slider.js',
 		],
 		img: 'src/img/**/*.*',
 		svg: 'src/svg/**/*.svg',
@@ -169,7 +172,21 @@ export const scss = () =>
 
 // js
 
-const webpackConf = {
+const webpackConfCritjs = {
+	mode: dev ? 'development' : 'production',
+	devtool: dev ? 'eval-source-map' : false,
+	optimization: {
+		minimize: false,
+	},
+	output: {
+		filename: 'critjs.js',
+	},
+	module: {
+		rules: [],
+	},
+};
+
+const webpackConfJs = {
 	mode: dev ? 'development' : 'production',
 	devtool: dev ? 'eval-source-map' : false,
 	optimization: {
@@ -184,26 +201,46 @@ const webpackConf = {
 };
 
 if (!dev) {
-	webpackConf.module.rules.push({
+	webpackConfCritjs.module.rules.push({
+		test: /\.(js)$/,
+		exclude: /(node_modules)/,
+		loader: 'babel-loader',
+	});
+
+	webpackConfJs.module.rules.push({
 		test: /\.(js)$/,
 		exclude: /(node_modules)/,
 		loader: 'babel-loader',
 	});
 }
 
-export const js = () =>
+export const critjs = () =>
 	gulp
-		.src(path.src.js)
+		.src(path.src.critjs)
 		.pipe(plumber())
-		.pipe(webpackStream(webpackConf, webpack))
+		.pipe(webpackStream(webpackConfCritjs, webpack))
 		.pipe(gulpif(!dev, gulp.dest(path.docs.js)))
 		.pipe(gulpif(!dev, terser()))
 		.pipe(
 			rename({
+				basename: 'critjs',
 				suffix: '.min',
 			}),
-			deleteSync(['docs/js/index.js'], {
-				force: true,
+		)
+		.pipe(gulp.dest(path.docs.js))
+		.pipe(browserSync.stream());
+
+export const js = () =>
+	gulp
+		.src(path.src.js)
+		.pipe(plumber())
+		.pipe(webpackStream(webpackConfJs, webpack))
+		.pipe(gulpif(!dev, gulp.dest(path.docs.js)))
+		.pipe(gulpif(!dev, terser()))
+		.pipe(
+			rename({
+				basename: 'index',
+				suffix: '.min',
 			}),
 		)
 		.pipe(gulp.dest(path.docs.js))
@@ -328,7 +365,7 @@ export const server = () => {
 		notify: false,
 		host: 'localhost',
 		port: 3001,
-		tunnel: true,
+		// tunnel: true,
 		server: {
 			baseDir: 'docs',
 		},
@@ -356,7 +393,7 @@ const develop = (ready) => {
 	ready();
 };
 
-export const base = gulp.parallel(html, scss, js, img, svg, webp, avif, copy);
+export const base = gulp.parallel(html, scss, critjs, js, img, svg, webp, avif, copy);
 
 export const build = gulp.series(clear, base, critCSS, server);
 
