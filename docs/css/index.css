@@ -4,35 +4,35 @@
   font-family: Merriweather;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Merriweather-400.woff2") format("woff2"), url("./../../fonts/Merriweather-400.woff") format("woff"), url("./../fonts/Merriweather-400.ttf") format("truetype"), url("./../fonts/Merriweather-400.eot") format("embedded-opentype");
+  src: url("/IndoTravel-landing/fonts/Merriweather-400.woff2") format("woff2"), url("./..//IndoTravel-landing/fonts/Merriweather-400.woff") format("woff"), url(".//IndoTravel-landing/fonts/Merriweather-400.ttf") format("truetype"), url(".//IndoTravel-landing/fonts/Merriweather-400.eot") format("embedded-opentype");
 }
 
 @font-face {
   font-family: Nunito;
   font-weight: 200;
   font-display: swap;
-  src: url("../fonts/Nunito-200.woff2") format("woff2"), url("./../../fonts/Nunito-200.woff") format("woff"), url("./../fonts/Nunito-200.ttf") format("truetype"), url("./../fonts/Nunito-200.eot") format("embedded-opentype");
+  src: url("/IndoTravel-landing/fonts/Nunito-200.woff2") format("woff2"), url("./..//IndoTravel-landing/fonts/Nunito-200.woff") format("woff"), url(".//IndoTravel-landing/fonts/Nunito-200.ttf") format("truetype"), url(".//IndoTravel-landing/fonts/Nunito-200.eot") format("embedded-opentype");
 }
 
 @font-face {
   font-family: Nunito;
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/Nunito-300.woff2") format("woff2"), url("./../../fonts/Nunito-300.woff") format("woff"), url("./../fonts/Nunito-300.ttf") format("truetype"), url("./../fonts/Nunito-300.eot") format("embedded-opentype");
+  src: url("/IndoTravel-landing/fonts/Nunito-300.woff2") format("woff2"), url("./..//IndoTravel-landing/fonts/Nunito-300.woff") format("woff"), url(".//IndoTravel-landing/fonts/Nunito-300.ttf") format("truetype"), url(".//IndoTravel-landing/fonts/Nunito-300.eot") format("embedded-opentype");
 }
 
 @font-face {
   font-family: Nunito;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/Nunito-600.woff2") format("woff2"), url("./../../fonts/Nunito-600.woff") format("woff"), url("./../fonts/Nunito-600.ttf") format("truetype"), url("./../fonts/Nunito-600.eot") format("embedded-opentype");
+  src: url("/IndoTravel-landing/fonts/Nunito-600.woff2") format("woff2"), url("./..//IndoTravel-landing/fonts/Nunito-600.woff") format("woff"), url(".//IndoTravel-landing/fonts/Nunito-600.ttf") format("truetype"), url(".//IndoTravel-landing/fonts/Nunito-600.eot") format("embedded-opentype");
 }
 
 @font-face {
   font-family: Nunito;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/Nunito-700.woff2") format("woff2"), url("./../../fonts/Nunito-700.woff") format("woff"), url("./../fonts/Nunito-700.ttf") format("truetype"), url("./../fonts/Nunito-700.eot") format("embedded-opentype");
+  src: url("/IndoTravel-landing/fonts/Nunito-700.woff2") format("woff2"), url("./..//IndoTravel-landing/fonts/Nunito-700.woff") format("woff"), url(".//IndoTravel-landing/fonts/Nunito-700.ttf") format("truetype"), url(".//IndoTravel-landing/fonts/Nunito-700.eot") format("embedded-opentype");
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
