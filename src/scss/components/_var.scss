@@ -9,7 +9,8 @@ $_4: #AFAFAF;
 	font: {
 		family: $name;
 		weight: $weight;
-		display: swap;
+		font-style: normal;
+		display: optional;
 	}
 	src:  url("../fonts/#{ $name }-#{ $weight }.woff2") format("woff2"),
 	url("./../../fonts/#{ $name }-#{ $weight }.woff") format("woff"),
