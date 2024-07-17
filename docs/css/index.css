@@ -1723,6 +1723,14 @@ iframe {
   letter-spacing: -0.02rem;
 }
 
+.designer a:focus-visible {
+  outline: 2px solid #C2900F;
+}
+
+.designer a:active {
+  color: #D09600;
+}
+
 .designer__copyright {
   display: none;
 }
@@ -2007,6 +2015,10 @@ iframe {
 
   .footer__form input:hover {
     border-color: #FCB500;
+  }
+
+  .designer a:hover {
+    color: #FCB500;
   }
 }
 

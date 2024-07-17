@@ -476,6 +476,22 @@
 		align-self: flex-start;
 		font-size: 10px;
 	}
+
+	a {
+		@media(hover:hover) {
+			&:hover {
+				color: $_3;
+			}
+		}
+
+		&:focus-visible {
+			outline: 2px solid #C2900F;
+		}
+
+		&:active {
+			color: #D09600;
+		}
+	}
 }
 
 .designer__copyright {
