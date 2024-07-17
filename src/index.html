@@ -40,7 +40,7 @@
 			<div class="container">
 				<div class="header__menu">
 					<img class="logo" src="./img/logo.svg" alt="Логотип компании IndoTravel" width="173" height="32" loading="lazy" decoding="async" style="content-visibility: auto">
-					<button class="burger" id="burger">
+					<button class="burger" id="burger" type="button">
 						<svg width="35" height="16" viewBox="0 0 35 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<rect width="35" height="2" rx="1" />
 							<rect y="7" width="35" height="2" rx="1" />
@@ -301,7 +301,7 @@
 
 										</ul>
 									</div>
-									<button class="popup__button popup__button--date btn" id="calc-button-date">Готово</button>
+									<button class="popup__button popup__button--date btn" id="calc-button-date" type="button">Готово</button>
 								</div>
 							</div>
 
@@ -340,10 +340,10 @@
 										<li class="popup__options-item popup__options-item--clac" tabindex="0">Персональный гид</li>
 										<li class="popup__options-item popup__options-item--clac" tabindex="0">Улучшенная палатка</li>
 									</ul>
-									<button class="popup__button popup__button--options  btn" id="calc-button-options">Готово</button>
+									<button class="popup__button popup__button--options  btn" id="calc-button-options" type="button">Готово</button>
 								</div>
 							</div>
-							<button class="price__button btn">Узнать цену</button>
+							<button class="price__button btn" type="button">Узнать цену</button>
 						</div>
 					</div>
 				</div>
@@ -448,14 +448,14 @@
 					</div>
 				</div>
 
-				<button class="prev">
+				<button class="prev" type="button">
 					<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path id="arrow-prev" fill-rule="evenodd" clip-rule="evenodd" d="M54.25 44.4999C54.25 44.79 54.1348 45.0682 53.9296 45.2733C53.7245 45.4784 53.4463 45.5937 53.1562 45.5937H40.4841L45.1806 50.288C45.2823 50.3897 45.363 50.5105 45.418 50.6433C45.4731 50.7762 45.5014 50.9186 45.5014 51.0624C45.5014 51.2062 45.4731 51.3486 45.418 51.4815C45.363 51.6144 45.2823 51.7351 45.1806 51.8368C45.0789 51.9385 44.9582 52.0191 44.8253 52.0742C44.6925 52.1292 44.5501 52.1575 44.4063 52.1575C44.2624 52.1575 44.12 52.1292 43.9872 52.0742C43.8543 52.0191 43.7336 51.9385 43.6319 51.8368L37.0694 45.2743C36.9675 45.1727 36.8867 45.052 36.8316 44.9191C36.7764 44.7862 36.748 44.6438 36.748 44.4999C36.748 44.3561 36.7764 44.2136 36.8316 44.0807C36.8867 43.9478 36.9675 43.8271 37.0694 43.7255L43.6319 37.163C43.8373 36.9577 44.1158 36.8423 44.4063 36.8423C44.6967 36.8423 44.9752 36.9577 45.1806 37.163C45.386 37.3684 45.5014 37.647 45.5014 37.9374C45.5014 38.2279 45.386 38.5064 45.1806 38.7118L40.4841 43.4062H53.1562C53.4463 43.4062 53.7245 43.5214 53.9296 43.7265C54.1348 43.9316 54.25 44.2098 54.25 44.4999Z" fill="currentColor" />
 						<circle class="circle" cx=" 45" cy="45" r="44.5" stroke="currentColor" />
 					</svg>
 				</button>
 
-				<button class="next">
+				<button class="next" type="button">
 					<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path id="arrow-next" fill-rule="evenodd" clip-rule="evenodd" d="M35.75 44.4999C35.75 44.79 35.8652 45.0682 36.0704 45.2733C36.2755 45.4784 36.5537 45.5937 36.8438 45.5937H49.5159L44.8194 50.288C44.7177 50.3897 44.637 50.5105 44.582 50.6433C44.5269 50.7762 44.4986 50.9186 44.4986 51.0624C44.4986 51.2062 44.5269 51.3486 44.582 51.4815C44.637 51.6144 44.7177 51.7351 44.8194 51.8368C44.9211 51.9385 45.0418 52.0191 45.1747 52.0742C45.3075 52.1292 45.4499 52.1575 45.5937 52.1575C45.7376 52.1575 45.88 52.1292 46.0128 52.0742C46.1457 52.0191 46.2664 51.9385 46.3681 51.8368L52.9306 45.2743C53.0325 45.1727 53.1133 45.052 53.1684 44.9191C53.2236 44.7862 53.252 44.6438 53.252 44.4999C53.252 44.3561 53.2236 44.2136 53.1684 44.0807C53.1133 43.9478 53.0325 43.8271 52.9306 43.7255L46.3681 37.163C46.1627 36.9577 45.8842 36.8423 45.5937 36.8423C45.3033 36.8423 45.0248 36.9577 44.8194 37.163C44.614 37.3684 44.4986 37.647 44.4986 37.9374C44.4986 38.2279 44.614 38.5064 44.8194 38.7118L49.5159 43.4062H36.8438C36.5537 43.4062 36.2755 43.5214 36.0704 43.7265C35.8652 43.9316 35.75 44.2098 35.75 44.4999Z" fill="currentColor" />
 						<circle class="circle" cx="45" cy="45" r="44.5" stroke="currentColor" />
@@ -648,7 +648,7 @@
 					<div class="footer__desc">Введите свой Email и мы свяжемся с вами в течении 3 рабочих дней</div>
 					<form class="footer__form" method="post" action="https://jsonplaceholder.typicode.com/posts">
 						<input id="footer-email" type="text" placeholder="Введите адрес электронной почты">
-						<button class="btn">
+						<button class="btn" type="submit">
 							<svg width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 8.49992C0.75 8.79 0.865234 9.0682 1.07035 9.27332C1.27547 9.47843 1.55367 9.59367 1.84375 9.59367H14.5159L9.81937 14.288C9.71768 14.3897 9.63701 14.5105 9.58198 14.6433C9.52694 14.7762 9.49862 14.9186 9.49862 15.0624C9.49862 15.2062 9.52694 15.3486 9.58198 15.4815C9.63701 15.6144 9.71768 15.7351 9.81937 15.8368C9.92107 15.9385 10.0418 16.0191 10.1747 16.0742C10.3075 16.1292 10.4499 16.1575 10.5937 16.1575C10.7376 16.1575 10.88 16.1292 11.0128 16.0742C11.1457 16.0191 11.2664 15.9385 11.3681 15.8368L17.9306 9.27429C18.0325 9.17269 18.1133 9.05199 18.1684 8.91911C18.2236 8.78623 18.252 8.64378 18.252 8.49992C18.252 8.35605 18.2236 8.2136 18.1684 8.08072C18.1133 7.94784 18.0325 7.82714 17.9306 7.72554L11.3681 1.16304C11.1627 0.957665 10.8842 0.842285 10.5937 0.842285C10.3033 0.842285 10.0248 0.957665 9.81937 1.16304C9.614 1.36842 9.49862 1.64697 9.49862 1.93742C9.49862 2.22786 9.614 2.50642 9.81937 2.71179L14.5159 7.40617H1.84375C1.55367 7.40617 1.27547 7.5214 1.07035 7.72652C0.865234 7.93164 0.75 8.20984 0.75 8.49992Z" />
 							</svg>
@@ -660,7 +660,7 @@
 							&copy;&nbsp;Indo Travel, 2022
 						</p>
 						<p>Design by Anastasia Ilina</p>
-						<p>Tg: @Mrshmallowww</p>
+						<p>Tg: <a href="https://t.me/Mrshmallowww">@Mrshmallowww</a></p>
 					</div>
 				</div>
 			</div>
