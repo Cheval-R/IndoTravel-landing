@@ -8,21 +8,23 @@
 		size: cover;
 	}
 
-		@media (width <=1200px) {
-			background-image: image-set(url('./../../img/calculator-bg-1024.avif') 1x type("image/avif"),
+	@media (width <=1200px) {
+		background-image: image-set(url('./../../img/calculator-bg-1024.avif') 1x type("image/avif"),
 				url('./../../img/calculator-bg-1024.webp') 1x type("image/webp"),
 				url('./../../img/calculator-bg-1024.jpg') 1x);
-		}
-		@media (width <=900px) {
-			background-image: image-set(url('./../../img/calculator-bg-768.avif') 1x type("image/avif"),
+	}
+
+	@media (width <=900px) {
+		background-image: image-set(url('./../../img/calculator-bg-768.avif') 1x type("image/avif"),
 				url('./../../img/calculator-bg-768.webp') 1x type("image/webp"),
 				url('./../../img/calculator-bg-768.jpg') 1x);
-		}
-		@media (width <=450px) {
-			background-image: image-set(url('./../../img/calculator-bg-320.avif') 1x type("image/avif"),
+	}
+
+	@media (width <=450px) {
+		background-image: image-set(url('./../../img/calculator-bg-320.avif') 1x type("image/avif"),
 				url('./../../img/calculator-bg-320.webp') 1x type("image/webp"),
 				url('./../../img/calculator-bg-320.jpg') 1x);
-		}
+	}
 
 	padding-top: 100px;
 	color: $_2;
@@ -202,15 +204,7 @@
 		color: $_3;
 	}
 
-	.select--options {
-		.select__arrow {
-			right: 40px;
 
-			@media(width <=900px) {
-				right: 9px;
-			}
-		}
-	}
 }
 
 
@@ -269,6 +263,16 @@
 	@media (width <=670px) {
 		top: 4px;
 		right: 5px;
+	}
+}
+
+.select--options {
+	.select__arrow {
+		right: 40px;
+
+		@media(width <=900px) {
+			right: 9px;
+		}
 	}
 }
 
